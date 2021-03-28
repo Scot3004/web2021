@@ -1,31 +1,47 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "secorto-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "3.0.0-alpha",
+  "description": "Página web de presentación de Sergio C. Orozco Torres",
+  "author": "Sergio Orozco <scot3004@gmail.com>",
+  "homepage": "https://www.secorto.com",
   "dependencies": {
+    "@emotion-icons/material-twotone": "^3.9.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@reach/skip-nav": "^0.13.2",
+    "@theme-ui/prism": "^0.6.0",
+    "@theme-ui/typography": "^0.6.0",
     "gatsby": "^3.1.2",
     "gatsby-plugin-gatsby-cloud": "^2.1.0",
     "gatsby-plugin-image": "^1.1.2",
     "gatsby-plugin-manifest": "^3.1.0",
+    "gatsby-plugin-mdx": "^2.1.0",
     "gatsby-plugin-offline": "^4.1.0",
     "gatsby-plugin-react-helmet": "^4.1.0",
     "gatsby-plugin-sharp": "^3.1.2",
+    "gatsby-plugin-theme-ui": "^0.6.0",
+    "gatsby-remark-copy-linked-files": "^3.1.0",
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-transformer-sharp": "^3.1.0",
+    "mdx-utils": "^0.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-switch": "^6.0.0",
+    "react-vertical-timeline-component": "^3.3.3",
+    "remark-slug": "^6.0.0",
+    "theme-ui": "^0.6.0",
+    "typography-theme-de-young": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "scot3004",
+    "developer"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -37,9 +53,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Scot3004/Scot3004.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Scot3004/Scot3004/issues"
   }
 }

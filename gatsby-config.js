@@ -1,8 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `SeCOrTo`,
+    author: `Sergio Orozco Torres`,
+    description: `Sitio web de Sergio Orozco`,
+    siteUrl: `https://www.secorto.com`,
+    sidebar: {
+      title: "Sergio Carlos Orozco Torres",
+      subtitle: "Software developer"
+    },
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/scot3004`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/scot3004`,
+      },
+      {
+        name: "LinkedIn",
+        url: `https://linkedin.com/in/scot3004`,
+      }
+    ],
+    menuLinks: [
+      {
+        name: 'Blog',
+        link: '/blog',
+      },
+      {
+        name: 'Portafolio',
+        link: '/portafolio',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,7 +40,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/img`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -19,13 +48,63 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: 'SeCOrTo',
+        short_name: 'SeCOrTo',
+        start_url: '/',
+        background_color: '#004f53',
+        // theme_color: '#004f53',
+        // Enables "Add to HomeScreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: 'standalone',
+        icon: 'content/img/logo.png', // This path is relative to the root of the site.
+        // An optional attribute which provides support for CORS check.
+        // If you do not provide a crossOrigin option, it will skip CORS for manifest.
+        // Any invalid keyword or empty string defaults to `anonymous`
+        crossOrigin: `use-credentials`,
+        theme_color_in_head: false,
+        shortcuts: [
+          {
+            name: "Blog",
+            url: "/blog",
+            description: "Blog Posts"
+          },
+          {
+            name: "Portafolio",
+            url: "/portafolio",
+            description: "Posts del portafolio"
+          }
+        ]
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-theme-ui',
+      options: {
+        prismPreset: 'night-owl',
+        preset: '@theme-ui/preset-funk',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve(
+            './src/containers/default-page-layout.jsx'
+          ),
+        },
+        gatsbyRemarkPlugins: [
+          /*{
+            resolve: `gatsby-remark-images`,
+            options: {
+              // should this be configurable by the end-user?
+              maxWidth: 1380,
+              linkImagesToOriginal: false,
+            },
+          },*/
+          { resolve: `gatsby-remark-copy-linked-files` },
+          /*{ resolve: `gatsby-remark-smartypants` },*/
+        ],
+        remarkPlugins: [require(`remark-slug`)],
       },
     },
     `gatsby-plugin-gatsby-cloud`,
@@ -33,4 +112,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+
 }

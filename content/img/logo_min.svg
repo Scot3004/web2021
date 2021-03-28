@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="48" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48">
+ <title id="title3511">Scot_logo</title>
+ <style id="style4155">.objeto {
+  stroke-linejoin:round;
+  stroke-opacity:1;
+  fill-rule:evenodd;
+  stroke-dashoffset:0;
+  stroke-linecap:round;
+  stroke-miterlimit:4;
+  stroke-dasharray:none;
+}
+.trazo {
+  stroke:#009aa9;
+  stroke-width:2.5;
+  fill:none;
+}
+.relleno {
+  stroke:none;
+  stroke-width:0;
+  display:inline;
+}
+.trazo_primario {
+  stroke:#009aa9;
+}
+.trazo_claro {
+  stroke:#69bfc8;
+}
+.lateral_impar {
+  fill:#000;
+}
+.central_impar {
+  fill:#fff;
+}
+.central_par {
+  fill:#fff;
+}
+.lateral_par {
+  fill:#000;
+}</style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Scot_logo</dc:title>
+    <dc:date>2016-04-12</dc:date>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Sergio Carlos Orozco Torres</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:relation>logo</dc:relation>
+    <dc:language>español</dc:language>
+    <dc:subject>
+     <rdf:Bag>
+      <rdf:li>Logo personal Sergio Orozco</rdf:li>
+     </rdf:Bag>
+    </dc:subject>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0 -1004.4)">
+  <path id="zona_1_lateral" d="m24.985 1005.3 0.03125 6.7179c-6.7117-0.2075-12.234 3.8818-12.808 7.6831-0.62355 6.3966 9.351 7.1743 12.598 7.6937l-23.833-0.063c0.90749-15.577 14.156-22.502 24.012-22.032z" class="objeto relleno lateral_impar"/>
+  <path id="zona_2_lateral" d="m25.007 1012c-0.000591-2.1363-0.034-4.5927-0.03459-6.7291 7.2334 0.3534 13.001 3.7824 17.364 9.0807-5.7782-1.0826-12.212-2.4438-17.33-2.3516z" class="objeto relleno lateral_par"/>
+  <path id="zona_3_lateral" d="m24.988 1043.6c14.253 0.9531 20.041-15.701-0.01281-16.286l22.014 0.01c0.78553 12.801-9.6724 23.516-22.025 24.123z" class="objeto relleno lateral_impar"/>
+  <path id="zona_4_lateral" d="m4.0548 1040.1c6.4278 1.9601 14.79 3.5767 20.935 3.5878l0.01515 7.7505c-8.693 0.5951-17.17-4.3822-20.95-11.338z" class="objeto relleno lateral_par"/>
+  <path id="zona_1_central" d="m25.02 1011.9c-6.7117-0.2075-12.234 3.8818-12.808 7.6831-0.62355 6.3966 9.5157 7.2896 12.78 7.7102z" class="objeto relleno central_impar"/>
+  <path id="zona_3_central" d="m25.003 1043.6c14.253 0.9531 20.041-15.701-0.01281-16.286z" class="objeto relleno central_impar"/>
+  <path id="zona_2_central" class="objeto relleno central_par" d="m25 1012 0.05249 15.334s21.467 0.1277 21.931 0.037c0.01304-4.077-1.8695-9.8214-4.6392-12.996-5.9912-1.1594-11.914-2.4152-17.345-2.3749z"/>
+  <path id="zona_4_central" d="m0.97376 22.931c-0.35315 5.9876 1.5259 9.85 3.0497 12.749 6.3949 2.1083 14.495 3.5933 21.018 3.5879l-0.03906-16.27z" class="objeto relleno central_par" transform="translate(0 1004.4)"/>
+ </g>
+ <g id="layer2">
+  <path id="linea_horizontal" d="m0.9 23h46.1" class="objeto trazo trazo_claro"/>
+  <path id="linea_vertical" d="m25 47.1v-46.1" class="objeto trazo trazo_claro"/>
+ </g>
+ <g id="layer_o" opacity="0.99">
+  <ellipse id="linea_o" class="objeto trazo_primario trazo" rx="23.114" ry="23.112" cy="24.019" cx="23.983"/>
+ </g>
+ <g id="layer_s">
+  <path id="linea_s" d="m4.0611 35.69s30.326 9.9773 33.599-3.3113c2.302-9.344-12.66-9.379-12.66-9.379s-18.45-1.26-11.128-11.071c7.393-7.2737 19.326-3.6459 28.466-1.9445" class="objeto trazo_primario trazo"/>
+ </g>
+</svg>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo_new_cls.svg"
+   inkscape:export-filename="E:\Imagenes\logo_256_full.png"
+   inkscape:export-xdpi="480.34384"
+   inkscape:export-ydpi="480.34384">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.313709"
+     inkscape:cx="43.057362"
+     inkscape:cy="23.430708"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <style
+     id="style4155">
+
+ .trazo {
+     stroke-linejoin:round;
+     stroke-opacity:1;
+     fill-rule:evenodd;
+     stroke-dashoffset:0;
+     stroke:#009aa9;
+     stroke-linecap:round;
+     stroke-miterlimit:4;
+     stroke-dasharray:none;
+     stroke-width:2.5;
+     fill:none;
+ }
+
+.relleno {
+    stroke-linejoin:round;
+    stroke-opacity:1;
+    fill-opacity:1;
+    stroke-dashoffset:0;
+    stroke:none;
+    stroke-linecap:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-width:0;
+    display:inline;
+}
+.trazo_primario {
+    stroke:#009aa9;
+}
+.trazo_claro {
+    stroke:#69bfc8;
+}
+.lateral_impar {
+    fill:#000;
+}
+.central_impar {
+    fill:#fff;
+}
+.central_par {
+    fill:#fff;
+}
+.lateral_par {
+    fill:#000;
+}
+</style>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     transform="translate(0,-1004.3622)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Fondo">
+    <path
+       class="objeto relleno lateral_impar"
+       inkscape:label="#zona1_lateral"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="zona_1_lateral"
+       d="m 24.985181,1005.2641 0.03125,6.7179 c -6.711708,-0.2075 -12.23351,3.8818 -12.808244,7.6831 -0.623546,6.3966 9.351019,7.1743 12.598322,7.6937 l -23.8332775,-0.063 c 0.9074892,-15.5771 14.1561605,-22.5017 24.0119495,-22.0317 z" />
+    <path
+       class="objeto relleno lateral_par"
+       inkscape:label="#zona_2_lateral"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="zona_2_lateral"
+       d="m 25.007158,1011.982 c -5.91e-4,-2.1363 -0.034,-4.5927 -0.03459,-6.7291 7.233366,0.3534 13.00083,3.7824 17.364195,9.0807 -5.778235,-1.0826 -12.21228,-2.4438 -17.329605,-2.3516 z" />
+    <path
+       class="objeto relleno lateral_impar"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="zona_3_lateral"
+       d="m 24.988418,1043.5683 c 14.252561,0.9531 20.040887,-15.7007 -0.01281,-16.2863 l 22.013892,0.01 c 0.78553,12.8008 -9.672376,23.5155 -22.024553,24.1226 z" />
+    <path
+       class="objeto relleno lateral_par"
+       inkscape:label="#zona3_n"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="zona_4_lateral"
+       d="m 4.0547505,1040.0799 c 6.4278235,1.9601 14.7904985,3.5767 20.9346815,3.5878 l 0.01515,7.7505 c -8.692994,0.5951 -17.1702625,-4.3822 -20.9498275,-11.3383 z" />
+    <path
+       class="objeto relleno central_impar"
+       inkscape:label="#path4431"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="zona_1_central"
+       d="m 25.020328,1011.9464 c -6.711708,-0.2075 -12.23351,3.8818 -12.808244,7.6831 -0.623546,6.3966 9.515741,7.2896 12.779516,7.7102 z" />
+    <path
+       class="objeto relleno central_impar"
+       sodipodi:nodetypes="ccc"
+       inkscape:connector-curvature="0"
+       id="zona_3_central"
+       d="m 25.00348,1043.6211 c 14.252561,0.9531 20.040887,-15.7007 -0.01281,-16.2863 z" />
+    <path
+       d="m 25.000005,1011.9587 0.05249,15.334 c 0,0 21.467001,0.1277 21.931457,0.037 0.01304,-4.077 -1.869456,-9.8214 -4.639228,-12.9961 -5.991219,-1.1594 -11.913735,-2.4152 -17.344719,-2.3749 z"
+       id="zona_2_central"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       class="objeto relleno central_par" />
+    <path
+       d="m 0.97376217,22.930534 c -0.35315396,5.9876 1.52593933,9.849954 3.04967533,12.749154 6.3948795,2.1083 14.4945345,3.59329 21.0175785,3.58789 l -0.03906,-16.269531 z"
+       transform="translate(0,1004.3622)"
+       id="zona_4_central"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       class="objeto relleno central_par" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="T"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <path
+       class="objeto trazo trazo_claro"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="linea_horizontal"
+       d="M 0.9,23 47,23"
+       inkscape:label="#path4140" />
+    <path
+       class="objeto trazo trazo_claro"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="linea_vertical"
+       d="M 25,47.1 24.999837,1"
+       inkscape:label="#path4140-3" />
+  </g>
+  <g
+     style="display:inline;opacity:0.98999999"
+     inkscape:label="O"
+     id="layer_o"
+     inkscape:groupmode="layer">
+    <ellipse
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       ry="23.111784"
+       rx="23.114092"
+       cy="24.019487"
+       cx="23.982821"
+       id="linea_o"
+       class="objeto trazo_primario trazo"
+       inkscape:label="#path4136" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="S"
+     id="layer_s"
+     inkscape:groupmode="layer">
+    <path
+       class="objeto trazo_primario trazo"
+       inkscape:label="#logo_s"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       sodipodi:nodetypes="csccc"
+       inkscape:connector-curvature="0"
+       id="linea_s"
+       d="m 4.0611283,35.68996 c 0,0 30.3258007,9.977323 33.5993127,-3.311277 C 39.96229,23.034583 25,23 25,23 25,23 6.5496585,21.740424 13.872186,11.928949 21.26522,4.6553419 33.198433,8.2831453 42.338377,9.9844772" />
+  </g>
+</svg>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09449 1052.3622"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo_texto.svg"
+   inkscape:export-filename="E:\Imagenes\logo_256_full.png"
+   inkscape:export-xdpi="480.34384"
+   inkscape:export-ydpi="480.34384">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.50000002"
+     inkscape:cx="-207.81096"
+     inkscape:cy="458.61189"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="mm" />
+  <title
+     id="title3511">Scot_logo</title>
+  <style
+     id="style4155">
+
+.objeto {
+  stroke-linejoin:round;
+  stroke-opacity:1;
+  fill-rule:evenodd;
+  stroke-dashoffset:0;
+  stroke-linecap:round;
+  stroke-miterlimit:4;
+  stroke-dasharray:none;
+}
+.trazo {
+  stroke:#009aa9;
+  stroke-width:2.0;
+  fill:none;
+}
+.relleno {
+  stroke:none;
+  stroke-width:0;
+  display:inline;
+}
+.trazo_primario {
+  stroke:#009aa9;
+}
+.trazo_claro {
+  stroke:#69bfc8;
+}
+.lateral_impar {
+  fill:#000;
+}
+.central_impar {
+  fill:#fff;
+}
+.central_par {
+  fill:#fff;
+}
+.lateral_par {
+  fill:#000;
+}
+
+.texto {
+stroke-linejoin:round;
+stroke-opacity:1;
+fill-rule:evenodd;
+stroke-dashoffset:0;
+stroke-linecap:round;
+stroke-miterlimit:4;
+stroke-dasharray:none;
+stroke:#009aa9;
+stroke-width:2.0;
+fill:none;
+}
+.texto_s {
+
+}
+.texto_c {
+}
+.texto_o {
+}
+.texto_t {
+}
+.texto_30_3 {
+}
+.texto_30_0 {
+}
+.texto_04_0 {
+}
+.texto_04_4 {
+}</style>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Scot_logo</dc:title>
+        <dc:date>2016-04-12</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sergio Carlos Orozco Torres</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:relation>logo</dc:relation>
+        <dc:language>español</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Logo personal Sergio Orozco</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Fondo"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,4.7244096e-6)"
+     style="display:inline">
+    <path
+       d="m 385.01821,77.618085 0.46875,100.768505 c -100.67562,-3.1125 -183.50265,58.227 -192.12366,115.2465 -9.35319,95.94919 140.26528,107.61469 188.97483,115.40569 l -357.499166,-0.945 C 38.451299,174.43709 237.18137,70.568085 385.01821,77.618085 Z"
+       id="zona_1_lateral"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:label="#zona1_lateral"
+       class="objeto relleno lateral_impar" />
+    <path
+       d="m 385.34786,178.38659 c -0.009,-32.0445 -0.51,-68.89051 -0.51885,-100.936505 108.50051,5.301 195.01247,56.735995 260.46293,136.210505 -86.67351,-16.239 -183.1842,-36.657 -259.94408,-35.274 z"
+       id="zona_2_lateral"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="#zona_2_lateral"
+       class="objeto relleno lateral_par" />
+    <path
+       d="m 385.06676,652.18128 c 213.78842,14.2965 300.61331,-235.5105 -0.19215,-244.2945 l 330.2084,0.15 c 11.78295,192.012 -145.08564,352.7325 -330.36831,361.839 z"
+       id="zona_3_lateral"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       class="objeto relleno lateral_impar" />
+    <path
+       d="m 71.061749,599.85528 c 96.417361,29.4015 221.857481,53.6505 314.020221,53.817 l 0.22725,116.2575 c -130.39491,8.9265 -257.55393,-65.733 -314.247411,-170.0745 z"
+       id="zona_4_lateral"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="#zona3_n"
+       class="objeto relleno lateral_par" />
+    <path
+       d="m 385.54541,177.85259 c -100.67562,-3.1125 -183.50265,58.227 -192.12366,115.2465 -9.35319,95.94919 142.73612,109.34419 191.69274,115.65319 z"
+       id="zona_1_central"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="#path4431"
+       class="objeto relleno central_impar" />
+    <path
+       d="m 385.29269,652.97328 c 213.78842,14.2965 300.61331,-235.5105 -0.19215,-244.2945 z"
+       id="zona_3_central"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       class="objeto relleno central_impar" />
+    <path
+       class="objeto relleno central_par"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="zona_2_central"
+       d="m 385.24057,178.03709 0.78735,230.01019 c 0,0 322.00503,1.9155 328.97187,0.555 0.1956,-61.15507 -28.04184,-147.32119 -69.58842,-194.94169 -89.86829,-17.391 -178.70604,-36.228 -260.1708,-35.6235 z" />
+    <path
+       class="objeto relleno central_par"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="zona_4_central"
+       d="m 24.846929,408.04758 c -5.29731,89.814 22.889085,147.7494 45.745125,191.2374 95.923206,31.6245 217.418016,53.8992 315.263676,53.8182 l -0.5859,-244.0428 z" />
+  </g>
+  <g
+     transform="translate(0,1004.3622)"
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="T"
+     style="display:inline">
+    <path
+       inkscape:label="#path4140"
+       d="m 23.740499,-595.27268 691.500011,0"
+       id="linea_horizontal"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="52"
+       inkscape:export-ydpi="52"
+       class="objeto trazo trazo_claro" />
+    <path
+       inkscape:label="#path4140-3"
+       d="m 385.24049,-233.77268 -0.003,-691.50001"
+       id="linea_vertical"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="52"
+       inkscape:export-ydpi="52"
+       class="objeto trazo trazo_claro" />
+  </g>
+  <g
+     transform="translate(0,1004.3622)"
+     inkscape:groupmode="layer"
+     id="layer_o"
+     inkscape:label="O"
+     style="display:inline;opacity:0.98999999">
+    <ellipse
+       inkscape:label="#path4136"
+       class="objeto trazo_primario trazo"
+       id="linea_o"
+       cx="369.98282"
+       cy="-579.98035"
+       rx="346.71136"
+       ry="346.67676"
+       inkscape:export-xdpi="52"
+       inkscape:export-ydpi="52" />
+  </g>
+  <g
+     transform="translate(0,1004.3622)"
+     inkscape:groupmode="layer"
+     id="layer_s"
+     inkscape:label="S"
+     style="display:inline">
+    <path
+       d="m 71.157419,-404.92329 c 0,0 454.887021,149.65984 503.989701,-49.66916 34.52774,-140.16148 -189.90663,-140.68023 -189.90663,-140.68023 0,0 -276.75512,-18.89364 -166.91721,-166.06576 110.89551,-109.10412 289.89372,-54.68706 426.99287,-29.16708"
+       id="linea_s"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccc"
+       inkscape:export-xdpi="52"
+       inkscape:export-ydpi="52"
+       inkscape:label="#logo_s"
+       class="objeto trazo_primario trazo" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="texto">
+    <g
+       id="g5389">
+      <path
+         d="m 275.70575,867.69393 87.41913,-0.96694"
+         id="path4140-4"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         class="texto" />
+      <path
+         style="    "
+         d="m 320.34313,911.66361 1.20316,-89.02825"
+         id="path4140-3-2"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         class="texto texto_t" />
+    </g>
+    <ellipse
+       class="texto texto_o"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       ry="45.187111"
+       rx="42.634705"
+       cy="868.22833"
+       cx="225.79836"
+       id="path4136-5-9"
+       style="    " />
+    <path
+       class="texto texto_c"
+       sodipodi:open="true"
+       d="m 173.61703,896.89006 a 42.634705,45.187111 0 0 1 -47.55408,14.32457 42.634705,45.187111 0 0 1 -28.353155,-42.9234 42.634705,45.187111 0 0 1 28.970725,-42.45763 42.634705,45.187111 0 0 1 47.34128,15.0956"
+       sodipodi:end="5.6230886"
+       sodipodi:start="0.67542864"
+       sodipodi:ry="45.187111"
+       sodipodi:rx="42.634705"
+       sodipodi:cy="868.63763"
+       sodipodi:cx="140.34325"
+       sodipodi:type="arc"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       id="path4136-5-9-9"
+       style="    " />
+    <ellipse
+       class="texto texto_30_0"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       ry="45.187111"
+       rx="42.634705"
+       cy="867.66333"
+       cx="510.57263"
+       id="path4136-5-9-0"
+       style="    " />
+    <ellipse
+       class="texto texto_04_0"
+       inkscape:export-ydpi="52"
+       inkscape:export-xdpi="52"
+       ry="45.187111"
+       rx="42.634705"
+       cy="867.5415"
+       cx="601.59393"
+       id="path4136-5-9-3"
+       style="    " />
+    <g
+       id="g5393">
+      <path
+         d="M 653.84414,866.89795 739.255,865.92048"
+         id="path4140-4-3"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         class="texto texto_30_4" />
+      <path
+         d="m 696.47297,912.57965 1.19122,-90.74039"
+         id="path4140-3-2-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         class="texto texto_04_4" />
+      <path
+         id="path4136-5-9-3-3"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         sodipodi:type="arc"
+         sodipodi:cx="696.44806"
+         sodipodi:cy="866.9671"
+         sodipodi:rx="42.634705"
+         sodipodi:ry="45.187111"
+         sodipodi:start="2.9975143"
+         sodipodi:end="4.9373766"
+         d="m 654.25511,873.45509 a 42.634705,45.187111 0 0 1 13.28959,-39.70622 42.634705,45.187111 0 0 1 38.41492,-10.83002"
+         sodipodi:open="true"
+         class="texto texto_04_4" />
+    </g>
+    <g
+       id="g5401">
+      <g
+         id="g5398">
+        <path
+           class="texto texto_30_3"
+           sodipodi:open="true"
+           d="m 389.58123,836.3784 a 42.634705,45.187111 0 0 1 46.56789,-10.34467 42.634705,45.187111 0 0 1 26.60849,41.80527 42.634705,45.187111 0 0 1 -26.4898,41.88987 42.634705,45.187111 0 0 1 -46.59702,-10.19627"
+           sodipodi:end="2.3663592"
+           sodipodi:start="3.91382"
+           sodipodi:ry="45.187111"
+           sodipodi:rx="42.634705"
+           sodipodi:cy="867.90692"
+           sodipodi:cx="420.12296"
+           sodipodi:type="arc"
+           inkscape:export-ydpi="52"
+           inkscape:export-xdpi="52"
+           id="path4136-5-9-7"
+           style="    " />
+      </g>
+      <path
+         d="m 377.40129,867.88644 85.41085,-0.97746"
+         id="path4140-4-3-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         class="texto texto_30_3 " />
+    </g>
+    <g
+       id="letra_s_scot">
+      <path
+         id="path4136-5-9-6"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         sodipodi:type="arc"
+         sodipodi:cx="49.944595"
+         sodipodi:cy="868.51538"
+         sodipodi:rx="42.634705"
+         sodipodi:ry="45.187111"
+         sodipodi:start="2.9006064"
+         sodipodi:end="5.5128984"
+         d="M 8.5419029,879.29976 A 42.634705,45.187111 0 0 1 29.29386,828.9827 a 42.634705,45.187111 0 0 1 51.250128,8.06703"
+         sodipodi:open="true"
+         class="texto texto_s"
+         style="fill:none;fill-rule:evenodd;stroke:#009aa9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         id="path4136-5-9-6-3"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         sodipodi:type="arc"
+         sodipodi:cx="-40.717754"
+         sodipodi:cy="-872.99475"
+         sodipodi:rx="42.634705"
+         sodipodi:ry="45.187111"
+         sodipodi:start="2.9333872"
+         sodipodi:end="5.512265"
+         d="m -82.431696,-863.65437 a 42.634705,45.187111 0 0 1 21.665391,-49.21975 42.634705,45.187111 0 0 1 50.629133,8.39319"
+         transform="matrix(-0.99995889,0.00906775,-0.00906775,-0.99995889,0,0)"
+         sodipodi:open="true"
+         class="texto texto_s"
+         style="fill:none;fill-rule:evenodd;stroke:#009aa9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#009aa9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         d="M 7.7562434,871.01343 90.667103,870.39311"
+         id="path4140-4-3-7-9"
+         inkscape:connector-cuvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-xdpi="52"
+         inkscape:export-ydpi="52"
+         class="texto texto_s" />
+    </g>
+  </g>
+</svg>

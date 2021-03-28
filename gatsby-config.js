@@ -77,12 +77,29 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-theme-ui',
+      resolve: 'gatsby-plugin-theme-ui'
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
       options: {
-        prismPreset: 'night-owl',
-        preset: '@theme-ui/preset-funk',
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portafolio`,
+        path: `${__dirname}/content/portafolio`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/content`,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -91,16 +108,18 @@ module.exports = {
           default: require.resolve(
             './src/containers/default-page-layout.jsx'
           ),
+          blog: require.resolve(
+            './src/containers/blog-layout.jsx'
+          ),
         },
         gatsbyRemarkPlugins: [
-          /*{
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              // should this be configurable by the end-user?
               maxWidth: 1380,
               linkImagesToOriginal: false,
             },
-          },*/
+          },
           { resolve: `gatsby-remark-copy-linked-files` },
           /*{ resolve: `gatsby-remark-smartypants` },*/
         ],

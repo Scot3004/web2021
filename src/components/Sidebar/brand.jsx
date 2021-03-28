@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import Logo from '../../assets/logo.svg'
 import { useSiteMetadata } from '../../hooks/use-site-metadata'
 
-export default ({ setOpen }) => {
+const Brand = ({ setOpen }) => {
   const { sidebar } = useSiteMetadata()
 
   return (
@@ -32,3 +32,5 @@ export default ({ setOpen }) => {
     </div>
   )
 }
+
+export default Brand

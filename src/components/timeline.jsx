@@ -11,7 +11,7 @@ import TimelineElement from './timelineElement'
 
 import { useThemeUI } from 'theme-ui'
 
-export default ({ data }) => {
+const Timeline = ({ data }) => {
   const { theme } = useThemeUI()
 
   // TODO: Gatsby build: window.matchMedia('(prefers-reduced-motion: no-preference)').matches === true
@@ -42,3 +42,5 @@ export default ({ data }) => {
     </VerticalTimeline>
   )
 }
+
+export default Timeline

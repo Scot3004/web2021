@@ -3,7 +3,7 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { School, Work } from '@emotion-icons/material-twotone'
 import { useThemeUI } from 'theme-ui'
 
-export default ({ item }) => {
+const TimelineElement = ({ item }) => {
   const { theme } = useThemeUI()
 
   const timelineTypeProps = {
@@ -48,3 +48,5 @@ export default ({ item }) => {
     </VerticalTimelineElement>
   )
 }
+
+export default TimelineElement

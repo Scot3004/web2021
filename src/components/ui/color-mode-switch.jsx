@@ -30,7 +30,7 @@ const uncheckedIcon = (
   />
 )
 
-export default ({afterToggle, ...props}) => {
+const ColorModeSwitch = ({afterToggle, ...props}) => {
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
   const toggleColorMode = (e) => {
@@ -52,3 +52,5 @@ export default ({afterToggle, ...props}) => {
     />
   )
 }
+
+export default ColorModeSwitch

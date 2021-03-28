@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 /** @jsx jsx */
-import { Styled, jsx } from 'theme-ui'
+import { Themed, jsx } from 'theme-ui'
 
 const Footer = ({ socialLinks }) => (
   <footer
@@ -13,13 +13,13 @@ const Footer = ({ socialLinks }) => (
     Sígueme en: {socialLinks
       ? socialLinks.map((platform, i, arr) => (
           <Fragment key={platform.url}>
-            <Styled.a
+            <Themed.a
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
             >
               {platform.name}
-            </Styled.a>
+            </Themed.a>
             {arr.length - 1 !== i && (
               <Fragment>, </Fragment>
             )}
@@ -29,7 +29,7 @@ const Footer = ({ socialLinks }) => (
 {` `}&bull;{` `}
     Hecho usando
     {` `}
-    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>
+    <Themed.a href="https://www.gatsbyjs.org">Gatsby</Themed.a>
   </footer>
 )
 export default Footer

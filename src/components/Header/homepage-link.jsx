@@ -4,7 +4,7 @@ import { jsx } from 'theme-ui'
 
 import Logo from '../../assets/logo.svg'
 
-export default () => (
+const HomepageLink = () => (
   <div>
     <Link
       to="/"
@@ -26,3 +26,5 @@ export default () => (
     </Link>
   </div>
 )
+
+export default HomepageLink

@@ -5,7 +5,7 @@ import Header from '../components/Header/header'
 import Footer from '../components/ui/page-footer'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
-export default ({ location, children, metadata }) => {
+const PageLayout = ({ location, children, metadata }) => {
   const {title, social} = useSiteMetadata()
 
   const pageTitle = metadata?.title ? metadata.title:title
@@ -19,3 +19,5 @@ export default ({ location, children, metadata }) => {
     </BlogLayout>
   )
 }
+
+export default PageLayout

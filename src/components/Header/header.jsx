@@ -3,7 +3,7 @@ import { jsx } from 'theme-ui'
 
 import HomePageLink from './homepage-link'
 
-export default ({ children }) => {
+const Header = ({ children }) => {
   return (
     <header
       sx={{
@@ -37,3 +37,5 @@ export default ({ children }) => {
     </header>
   )
 }
+
+export default Header

@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'gatsby-image'
 
-const Hero = ({ post }) => (
+const Hero = ({ image }) => (
   <>
-    {post?.image?.childImageSharp && (
+    {image?.childImageSharp && (
       <Image
         fluid={post.image.childImageSharp.fluid}
         alt={post.imageAlt ? post.imageAlt : post.excerpt}

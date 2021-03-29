@@ -1,20 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Link } from "gatsby"
+import PortfolioPost from "../components/Portfolio/portfolio-post"
+import SEO from "../containers/seo"
+import Layout from "../containers/layout"
+import HeaderLink from "../components/Header/header-link"
 
-const shortcodes = { Link } // Provide common components here
+const PortfolioLink = <HeaderLink to="/portafolio" >Portafolio</HeaderLink>
 
-export default function PageTemplate({ data: { mdx } }) {
+export default function PageTemplate({ data: { mdx }, location }) {
   return (
-    <div>
-      Portafolio
-      <h1>{mdx.frontmatter.title}</h1>
-      <MDXProvider components={shortcodes}>
-        <MDXRenderer>{mdx.body}</MDXRenderer>
-      </MDXProvider>
-    </div>
+    <Layout location={location} header={PortfolioLink}>
+      <SEO title={mdx.frontmatter.title} />
+      <PortfolioPost
+        title={mdx.frontmatter.title}
+        body={mdx.body}
+        role={mdx.frontmatter.role}
+        responsibilities={mdx.frontmatter.responsibilities}
+        gallery={mdx.frontmatter.gallery}
+      />
+      {/* <Footer socialLinks={ social }/> */}
+    </Layout>
   )
 }
 
@@ -25,6 +30,8 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        role
+        responsibilities
       }
     }
   }

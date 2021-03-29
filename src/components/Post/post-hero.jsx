@@ -1,13 +1,10 @@
 import React from 'react'
-import Image from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Hero = ({ image }) => (
   <>
     {image?.childImageSharp && (
-      <Image
-        fluid={post.image.childImageSharp.fluid}
-        alt={post.imageAlt ? post.imageAlt : post.excerpt}
-      />
+      <GatsbyImage image={image.childImageSharp.gatsbyImageData}/>
     )}
   </>
 )

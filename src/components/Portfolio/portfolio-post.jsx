@@ -3,14 +3,14 @@ import { jsx } from 'theme-ui'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Themed } from 'theme-ui'
 
-// import PostHero from '../Post/post-hero'
+import PostHero from '../Post/post-hero'
 import PostTitle from '../Post/post-title'
 import Gallery from '../ui/gallery'
 import { PlaylistAddCheck, Person } from '@emotion-icons/material-twotone'
 
-export default ({ title, role, responsibilities, body, gallery }) => (
+export default ({ title, role, responsibilities, body, gallery, image }) => (
   <main>
-    {/* <PostHero post={post} /> */}
+    <PostHero image={image} />
     <PostTitle sx={{mt: 3 }}>{title}</PostTitle>
     <Themed.p><Person size={24} sx={{
         position: "relative",
@@ -21,6 +21,6 @@ export default ({ title, role, responsibilities, body, gallery }) => (
         top: "-2px"
       }}/> {responsibilities}</Themed.p>
     <MDXRenderer>{body}</MDXRenderer>
-    {/* <Gallery items={gallery} /> */}
+    <Gallery items={gallery} />
   </main>
 )

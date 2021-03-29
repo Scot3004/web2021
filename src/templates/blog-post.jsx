@@ -16,6 +16,7 @@ export default function PageTemplate({ data: { mdx }, location }) {
         title={mdx.frontmatter.title}
         body={mdx.body}
         date={mdx.frontmatter.date}
+        image={mdx.frontmatter.image}
       />
       {/* <Footer socialLinks={ social }/> */}
     </Layout>
@@ -30,6 +31,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
+        image {
+          childImageSharp{
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
       }
     }
   }

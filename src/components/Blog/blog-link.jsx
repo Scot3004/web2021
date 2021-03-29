@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { Themed, Card, Text, jsx } from 'theme-ui'
-import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 import PostDate from '../Post/post-date'
 
@@ -10,18 +9,13 @@ const PostLink = ({ title, slug, date, excerpt, image }) => (
     to={slug}
     sx={{
       flex: ['0 1 100%', '0 1 49%'],
+      padding:"1rem"
     }}
   >
-    {image && (
-      <Img
-        sizes={{ ...image.childImageSharp.fluid, aspectRatio: 16 / 9 }}
-      ></Img>
-    )}
     <Text
       sx={{
         color: 'primary',
         fontFamily: 'heading',
-        padding: 2,
       }}
     >
       <h2

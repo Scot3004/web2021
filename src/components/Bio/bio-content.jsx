@@ -2,13 +2,13 @@ import React, { Fragment } from 'react'
 import { Themed } from 'theme-ui'
 
 /**
- * Shadow me to add your own bio content
+ * Change the content to add your own bio
  */
 
 export default () => (
   <Fragment>
-    Words by <Themed.a href="http://example.com/">Jane Doe</Themed.a>.
-    <br />
-    Change me. This is all quite default.
+    <Themed.a href="https://www.secorto.com/">Sergio Orozco</Themed.a>
+    {` `}
+    Test Automation Engineer.
   </Fragment>
 )

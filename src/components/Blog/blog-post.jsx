@@ -8,7 +8,7 @@ import PostDate from '../Post/post-date'
 export default ({ post }) => (
   <main>
     <PostHero post={post} />
-    <PostTitle sx={{ mb: 0 }}>{post.title}</PostTitle>
+    <PostTitle sx={{ mb: 0 }}>{post.frontmatter.title}</PostTitle>
     <PostDate sx={{ mb: 3 }}>{post.date}</PostDate>
     <MDXRenderer>{post.body}</MDXRenderer>
   </main>

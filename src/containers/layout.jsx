@@ -2,6 +2,7 @@ import React from 'react'
 import { Themed } from 'theme-ui'
 import Helmet from 'react-helmet'
 import { SkipNavLink } from "@reach/skip-nav"
+import VisuallyHidden from "@reach/visually-hidden";
 import "@reach/skip-nav/styles.css"
 
 import Sidebar from '../components/Sidebar/sidebar'
@@ -19,7 +20,9 @@ const Layout = ({ children, header }) => {
             <link rel="stylesheet" href={webfontURL} />
             <meta name="viewport" content="width=device-width, minimum-scale=1"></meta>
           </Helmet>
-          <SkipNavLink />
+          <VisuallyHidden>
+            <SkipNavLink >Saltar al contenido</SkipNavLink>
+          </VisuallyHidden>
           <BurgerButton
             open={sidebarOptions.open}
             setOpen={sidebarOptions.toggleOpen}

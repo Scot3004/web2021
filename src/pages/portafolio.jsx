@@ -5,14 +5,14 @@ import Layout from '../containers/layout'
 import SEO from '../containers/seo'
 import Footer from '../components/ui/page-footer'
 import Header from '../components/Header/header'
-import PostList from '../components/Portfolio/portfolio-list'
+import PortfolioList from '../components/Portfolio/portfolio-list'
 
 
-const BlogPosts = ({ data, location }) => (
+const PortfolioPosts = ({ data, location }) => (
   <Layout location={location} header={<Header>Blog</Header>} >
     <SEO title="Blog" />
     <main>
-      <PostList posts={data.allMdx.edges } />
+      <PortfolioList posts={data.allMdx.edges } />
     </main>
     <Footer socialLinks={data.site.siteMetadata.social} />
   </Layout>
@@ -47,6 +47,6 @@ export const query = graphql`
   }
 `
 
-export default BlogPosts
+export default PortfolioPosts
 
 

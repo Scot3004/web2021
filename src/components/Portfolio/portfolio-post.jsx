@@ -15,11 +15,12 @@ export default ({ title, role, responsibilities, body, gallery, image }) => (
     <Themed.p><Person size={24} sx={{
         position: "relative",
         top: "-2px"
-      }}/> {role}</Themed.p>
+      }}/>{role}
+    </Themed.p>
     <Themed.p><PlaylistAddCheck size={24}  sx={{
         position: "relative",
         top: "-2px"
-      }}/> {responsibilities}</Themed.p>
+      }}/>{responsibilities}</Themed.p>
     <MDXRenderer>{body}</MDXRenderer>
     <Gallery items={gallery} />
   </main>

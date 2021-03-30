@@ -8,7 +8,7 @@ import HeaderLink from '../components/Header/header-link'
 
 const BlogLink = <HeaderLink to="/blog" >Blog</HeaderLink>
 
-export default function PageTemplate({ data: { mdx }, location }) {
+const BlogTemplate = ({ data: { mdx }, location }) => {
   return (
     <Layout location={location} header={BlogLink}>
       <SEO title={mdx.frontmatter.title} />
@@ -40,3 +40,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogTemplate

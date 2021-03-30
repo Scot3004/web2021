@@ -7,7 +7,7 @@ import HeaderLink from "../components/Header/header-link"
 
 const PortfolioLink = <HeaderLink to="/portafolio" >Portafolio</HeaderLink>
 
-export default function PageTemplate({ data: { mdx }, location }) {
+const PortfolioTemplate = ({ data: { mdx }, location }) => {
   return (
     <Layout location={location} header={PortfolioLink}>
       <SEO title={mdx.frontmatter.title} />
@@ -50,3 +50,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default PortfolioTemplate

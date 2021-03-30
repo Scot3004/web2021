@@ -101,9 +101,6 @@ module.exports = {
           default: require.resolve(
             './src/containers/default-page-layout.jsx'
           ),
-          blog: require.resolve(
-            './src/containers/blog-layout.jsx'
-          ),
         },
         gatsbyRemarkPlugins: [
           {
@@ -114,7 +111,6 @@ module.exports = {
             },
           },
           { resolve: `gatsby-remark-copy-linked-files` },
-          /*{ resolve: `gatsby-remark-smartypants` },*/
         ],
         remarkPlugins: [require(`remark-slug`)],
       },

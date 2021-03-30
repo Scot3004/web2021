@@ -12697,7 +12697,7 @@ simple-get@^4.0.0:
     once "^1.3.1"
     simple-concat "^1.0.0"
 
-simple-react-lightbox@^3.6.4:
+simple-react-lightbox@^3.6.3:
   version "3.6.4"
   resolved "https://registry.yarnpkg.com/simple-react-lightbox/-/simple-react-lightbox-3.6.4.tgz#ee8171271e587027b7be17acbf513ee1a2ae8e7b"
   integrity sha512-6Yer82osURnvHFGFiYaAFdK3X32/FEm82Im++UMz5tVimf/duWeUZbu4IngUILx0jRQkBGnX1bVoabTAJmu4dQ==

@@ -9,7 +9,7 @@ import BurgerButton from '../components/Sidebar/burger-button'
 import SidebarContext from '../context/SidebarContext'
 import Main from '../components/ui/main'
 
-const Layout = ({ children, header, ...props }) => {
+const Layout = ({ children, header }) => {
   const webfontURL = 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Kalam&display=swap'
   return (
     <SidebarContext.Consumer>

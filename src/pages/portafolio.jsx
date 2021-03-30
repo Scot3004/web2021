@@ -29,7 +29,10 @@ export const query = graphql`
             title
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  aspectRatio: 1.7
+                )
               }
             }
           }

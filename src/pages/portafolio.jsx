@@ -27,14 +27,6 @@ export const query = graphql`
           excerpt
           frontmatter {
             title
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  aspectRatio: 1.7
-                )
-              }
-            }
           }
         }
       }

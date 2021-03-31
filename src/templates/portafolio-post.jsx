@@ -33,19 +33,6 @@ export const pageQuery = graphql`
         title
         role
         responsibilities
-        image {
-          childImageSharp{
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        gallery {
-          image {
-            publicURL
-            thumbnail: childImageSharp{
-              gatsbyImageData(width: 200)
-            }
-          }
-        }
       }
     }
   }

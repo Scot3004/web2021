@@ -3,9 +3,9 @@ import { jsx } from 'theme-ui'
 
 import { Flex } from 'theme-ui'
 
-import Portfolio from './portfolio-link'
+import PortfolioLink from './portfolio-link'
 
-const PostList = ({ posts }) => (
+const PortfolioList = ({ posts }) => (
   <Flex
     sx={{
       flexWrap: 'wrap',
@@ -13,7 +13,7 @@ const PostList = ({ posts }) => (
     }}
   >
     {posts.map(( {node} ) => (
-      <Portfolio
+      <PortfolioLink
         key={node.slug}
         title={node.frontmatter.title}
         excerpt={node.excerpt}
@@ -25,4 +25,4 @@ const PostList = ({ posts }) => (
   </Flex>
 )
 
-export default PostList
+export default PortfolioList

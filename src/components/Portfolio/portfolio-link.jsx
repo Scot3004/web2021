@@ -6,7 +6,6 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const PortfolioLink = ({ slug, image, title }) => (
   <Card
     as={Link}
-    to={slug}
     sx={{
       flex: ['0 1 100%', '0 1 49%', '0 1 32%'],
     }}

@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx, Card, Text } from 'theme-ui'
-import { Link } from 'gatsby'
+import { Link as GatsbyLink } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const PortfolioLink = ({ slug, image, title }) => (
   <Card
-    as={Link}
+    as={GatsbyLink}
     sx={{
       flex: ['0 1 100%', '0 1 49%', '0 1 32%'],
     }}

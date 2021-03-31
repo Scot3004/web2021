@@ -7,7 +7,7 @@ import Logo from '../../assets/logo.svg'
 const HomepageLink = () => (
   <div>
     <Link
-      to="/"
+      exact to="/"
     >
       <img
         src={Logo}

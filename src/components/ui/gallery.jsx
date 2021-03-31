@@ -22,7 +22,7 @@ const gallery = ({ items }) => (
         flexWrap: "wrap",
         justifyContent: "center",
       }}>
-        {items.map((item) => (
+        {items?.map((item) => (
           <a
             key={item.alt}
             href={item.image.publicURL}

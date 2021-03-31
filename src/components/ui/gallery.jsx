@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getSrc } from "gatsby-plugin-image"
 
 const options = {
   settings: {
@@ -25,7 +25,7 @@ const gallery = ({ items }) => (
         {items?.map((item) => (
           <a
             key={item.alt}
-            href={item.image.publicURL}
+            href={getSrc(item.image)}
             data-attribute="SRL"
             sx={{
               margin: "10px"

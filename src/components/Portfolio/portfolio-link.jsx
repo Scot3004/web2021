@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import { jsx, Card, Text } from 'theme-ui'
-import { Link as GatsbyLink } from "gatsby";
+import { Link } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const PortfolioLink = ({ slug, image, title }) => (
   <Card
-    as={GatsbyLink}
+    as={Link}
     sx={{
       flex: ['0 1 100%', '0 1 49%', '0 1 32%'],
     }}
     to={slug}
   >
-    <GatsbyImage image={image.childImageSharp.gatsbyImageData}
+    <GatsbyImage image={image?.childImageSharp.gatsbyImageData}
     sx={{
       borderTopRightRadius: 6,
       borderTopLeftRadius: 6,

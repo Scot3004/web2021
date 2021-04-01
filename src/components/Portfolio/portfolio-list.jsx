@@ -16,7 +16,6 @@ const PortfolioList = ({ posts }) => (
       <PortfolioLink
         key={node.slug}
         title={node.frontmatter.title}
-        excerpt={node.excerpt}
         slug={node.slug}
         image={node.frontmatter.image}
         />

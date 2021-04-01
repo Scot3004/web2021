@@ -2,8 +2,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require("path")
 
 const contentTemplate = {
-  'blog': `./src/templates/blog-post.jsx`,
-  'portafolio': `./src/templates/portafolio-post.jsx`
+  'blog': `./src/templates/blog-template.jsx`,
+  'portafolio': `./src/templates/portafolio-template.jsx`
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {

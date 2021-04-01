@@ -1,3 +1,6 @@
+const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require("path")
+
 const contentTemplate = {
   'blog': `./src/templates/blog-post.jsx`,
   'portafolio': `./src/templates/portafolio-post.jsx`
@@ -6,14 +9,20 @@ const contentTemplate = {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `Mdx`) {
+    const slug = createFilePath({ node, getNode, basePath: `blog` })
+    const contentType = getNode(node.parent).sourceInstanceName
     createNodeField({
       node,
       name: `contentType`,
-      value: getNode(node.parent).sourceInstanceName,
+      value: contentType,
+    })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: `/${contentType}${slug}`,
     })
   }
 }
-const path = require("path")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -24,8 +33,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             id,
-            slug,
             fields {
+              slug,
               contentType
             }
           }
@@ -43,12 +52,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // you'll call `createPage` for each result
   posts.forEach(({ node }, index) => {
-    const slug = `${node.fields.contentType}/${node.slug}`
-
     createPage({
-      path: slug,
+      path: node.fields.slug,
       component: path.resolve(contentTemplate[node.fields.contentType]),
-      context: { slug: slug, id: node.id },
+      context: { slug: node.fields.slug, id: node.id },
     })
   })
 }

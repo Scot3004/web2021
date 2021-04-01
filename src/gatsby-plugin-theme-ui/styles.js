@@ -32,6 +32,7 @@ const customStyles = {
   // from typography overrideThemeStyles
   a: {
     color: `primary`,
+    transition: 'color 0.3s linear',
     ":hover": {
       color: `hover`,
     },

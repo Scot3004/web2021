@@ -26,7 +26,7 @@ const PortfolioLink = ({ slug, image, title }) => (
         color: "primary",
         fontFamily: "heading",
         textAlign: "center",
-        margin: 1,
+        margin: "0 auto .5rem",
         display: "block",
       }}
     >

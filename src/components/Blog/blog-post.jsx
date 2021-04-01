@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import PostHero from "../Post/post-hero"
 import PostTitle from "../Post/post-title"

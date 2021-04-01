@@ -5,6 +5,7 @@ import PostTitle from '../Post/post-title'
 
 import { PlaylistAddCheck, Person } from '@emotion-icons/material-twotone'
 import GalleryItems from '../Gallery/GalleryItems'
+import GalleryWrapper from '../Gallery/GalleryWrapper'
 
 export default ({ children, title, role, responsibilities, gallery, image }) => (
   <main>
@@ -22,7 +23,8 @@ export default ({ children, title, role, responsibilities, gallery, image }) => 
         top: "-2px"
       }}/>{responsibilities}</p>
     {children}
-
-    <GalleryItems items={gallery} />
+    <GalleryWrapper>
+      <GalleryItems items={gallery} />
+    </GalleryWrapper>
   </main>
 )

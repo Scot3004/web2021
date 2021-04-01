@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { SkipNavLink } from "@reach/skip-nav"
 import VisuallyHidden from "@reach/visually-hidden";
 import "@reach/skip-nav/styles.css"
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 import Sidebar from '../components/Sidebar/sidebar'
 import BurgerButton from '../components/Sidebar/burger-button'
@@ -16,6 +17,7 @@ const Layout = ({ children, header }) => {
     <SidebarContext.Consumer>
       {(sidebarOptions) => (
         <Themed.root>
+
           <Helmet>
             <link rel="stylesheet" href={webfontURL} />
             <meta name="viewport" content="width=device-width, minimum-scale=1"></meta>
@@ -31,9 +33,11 @@ const Layout = ({ children, header }) => {
             open={sidebarOptions.open}
             setOpen={sidebarOptions.closeOnMobile}
           />
-          <Main sidebarOpen={sidebarOptions.open} header={header}>
-            {children}
-          </Main>
+          <SimpleReactLightbox>
+            <Main sidebarOpen={sidebarOptions.open} header={header}>
+              {children}
+            </Main>
+          </SimpleReactLightbox>
         </Themed.root>
       )}
     </SidebarContext.Consumer>

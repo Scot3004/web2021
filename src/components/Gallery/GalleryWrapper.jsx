@@ -12,11 +12,9 @@ const options = {
 }
 
 const GalleryWrapper = ({ children }) => (
-  <SimpleReactLightbox>
-    <SRLWrapper options={options}>
-      {children}
-    </SRLWrapper>
-  </SimpleReactLightbox>
+  <SRLWrapper options={options}>
+    {children}
+  </SRLWrapper>
 )
 
 export default GalleryWrapper

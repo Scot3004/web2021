@@ -14,8 +14,8 @@ const PortfolioLink = ({ slug, image, title }) => (
     <GatsbyImage
       image={image?.childImageSharp.gatsbyImageData}
       sx={{
-        borderTopRightRadius: 6,
-        borderTopLeftRadius: 6,
+        borderTopRightRadius: 10,
+        borderTopLeftRadius: 10,
         margin: "auto",
       }}
       height="220"

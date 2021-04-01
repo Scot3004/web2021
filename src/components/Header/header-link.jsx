@@ -9,6 +9,7 @@ const HeaderLink = ({ children, ...props }) => (
       {...props}
       sx={{
         color: "primary",
+        transition: 'all 0.3s linear',
         textDecoration: "none",
         ":hover": {
           color: "hover",

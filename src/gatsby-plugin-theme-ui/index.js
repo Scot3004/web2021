@@ -25,7 +25,7 @@ const customStyles = merge(typography, {
   },
   cards: {
     primary: {
-      borderRadius: 6,
+      borderRadius: 10,
       boxShadow: theme => `0 0 8px  ${theme.colors.primary}`,
       textDecoration: "none",
       marginBottom: "1em",

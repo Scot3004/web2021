@@ -1,6 +1,7 @@
 const customStyles = {
   root: {
     fontFamily: `body`,
+    transition: 'all 0.3s linear'
   },
   pre: {
     variant: `prism`,
@@ -66,7 +67,7 @@ const customStyles = {
     ":hover": {
       color: "sidebar.hover",
     },
-  },
+  }
 }
 
 export default customStyles

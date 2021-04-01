@@ -20,7 +20,7 @@ const Timeline = ({ data }) => {
     <VerticalTimeline
       animate={animationsEnabled}
       sx={{
-        "&::before": {
+        "&.vertical-timeline::before": {
           background: theme.colors.primary,
           width: 4,
         },

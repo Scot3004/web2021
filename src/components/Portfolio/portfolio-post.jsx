@@ -16,7 +16,7 @@ const PortfolioPost = ({
   image,
 }) => (
   <main>
-    <PostHero image={image} />
+    <PostHero image={image} alt={title}/>
     <PostTitle sx={{ mt: 3 }}>{title}</PostTitle>
     <p>
       <Person

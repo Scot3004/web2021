@@ -19,6 +19,7 @@ const PortfolioLink = ({ slug, image, title }) => (
         margin: "auto",
       }}
       height="220"
+      alt={title}
     />
     <Text
       sx={{

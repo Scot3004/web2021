@@ -41,6 +41,7 @@ export const pageQuery = graphql`
           }
         }
         gallery {
+          alt
           image {
             full: childImageSharp {
               gatsbyImageData(layout: FULL_WIDTH)

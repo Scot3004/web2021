@@ -22,7 +22,7 @@ const GalleryItems = ({ items }) => (
             margin: "10px",
           }}
         >
-          <GatsbyImage image={image} alt="" />
+          <GatsbyImage image={image} alt={item.alt} />
         </a>
       )
     })}

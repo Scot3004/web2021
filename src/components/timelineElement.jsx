@@ -1,7 +1,7 @@
-import React from 'react'
-import { VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { School, Work } from '@emotion-icons/material-twotone'
-import { useThemeUI } from 'theme-ui'
+import React from "react"
+import { VerticalTimelineElement } from "react-vertical-timeline-component"
+import { School, Work } from "@emotion-icons/material-twotone"
+import { useThemeUI } from "theme-ui"
 
 const TimelineElement = ({ item }) => {
   const { theme } = useThemeUI()
@@ -11,21 +11,21 @@ const TimelineElement = ({ item }) => {
       icon: <School />,
       iconStyle: {
         background: theme.colors.timeline.academicBG,
-        color: theme.colors.timeline.iconColor
+        color: theme.colors.timeline.iconColor,
       },
     },
     work: {
       icon: <Work />,
       iconStyle: {
         background: theme.colors.timeline.previousWorkBG,
-        color: theme.colors.timeline.iconColor
+        color: theme.colors.timeline.iconColor,
       },
     },
     currentWork: {
       icon: <Work />,
       iconStyle: {
         background: theme.colors.timeline.workBG,
-        color: theme.colors.timeline.iconColor
+        color: theme.colors.timeline.iconColor,
       },
     },
   }
@@ -34,9 +34,9 @@ const TimelineElement = ({ item }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: theme.colors.background,
-        color: 'theme.colors.text',
+        color: "theme.colors.text",
         border: `4px solid ${theme.colors.primary}`,
-        boxShadow: '0 2px 40px 0 rgba(0,0,0,0.07)',
+        boxShadow: "0 2px 40px 0 rgba(0,0,0,0.07)",
       }}
       contentArrowStyle={{ borderRight: `12px solid ${theme.colors.primary}` }}
       date={item.date}

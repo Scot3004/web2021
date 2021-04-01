@@ -9,12 +9,12 @@ const lightWhite = `rgba(255, 255, 255, 0.86)`
 const opaqueLightYellow = `rgba(255, 229, 100, 0.2)`
 const opaqueLightWhite = `hsla(0, 0%, 100%, 0.2)`
 const lightGray = `hsla(0, 0%, 0%, 0.2)`
-const darkCyan = '#004f53'
-const darkPurple = '#993399'
-const lightCyan = '#A2C3C3'
+const darkCyan = "#004f53"
+const darkPurple = "#993399"
+const lightCyan = "#A2C3C3"
 
 const colors = {
-  text: '#222',
+  text: "#222",
   primary: darkCyan,
   background: white,
   hover: purple90,
@@ -45,8 +45,8 @@ const colors = {
   timeline: {
     workBG: darkCyan,
     academicBG: darkPurple,
-    previousWorkBG: '#777',
-    iconColor: '#fff'
+    previousWorkBG: "#777",
+    iconColor: "#fff",
   },
   modes: {
     dark: {

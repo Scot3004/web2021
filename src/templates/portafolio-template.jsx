@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import PortfolioPost from "../components/Portfolio/portfolio-post"
 import SEO from "../containers/seo"
 import Layout from "../containers/layout"
 import HeaderLink from "../components/Header/header-link"
 
-const PortfolioLink = <HeaderLink to="/portafolio" >Portafolio</HeaderLink>
+const PortfolioLink = <HeaderLink to="/portafolio">Portafolio</HeaderLink>
 
 const PortfolioTemplate = ({ data: { mdx }, location }) => {
   return (
@@ -18,7 +18,6 @@ const PortfolioTemplate = ({ data: { mdx }, location }) => {
         responsibilities={mdx.frontmatter.responsibilities}
         image={mdx.frontmatter.image}
         gallery={mdx.frontmatter.gallery}
-
       >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </PortfolioPost>
@@ -37,16 +36,16 @@ export const pageQuery = graphql`
         role
         responsibilities
         image {
-          childImageSharp{
+          childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         gallery {
           image {
-            full: childImageSharp{
+            full: childImageSharp {
               gatsbyImageData(layout: FULL_WIDTH)
             }
-            thumbnail: childImageSharp{
+            thumbnail: childImageSharp {
               gatsbyImageData(width: 200)
             }
           }

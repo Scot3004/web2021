@@ -1,12 +1,12 @@
 /** @jsx jsx */
 
-import { jsx } from 'theme-ui'
-import { preToCodeBlock } from 'mdx-utils'
-import PrismCodeBlock from '@theme-ui/prism'
+import { jsx } from "theme-ui"
+import { preToCodeBlock } from "mdx-utils"
+import PrismCodeBlock from "@theme-ui/prism"
 
-import headings from '../components/ui/headings'
+import headings from "../components/ui/headings"
 
-const CodeBlock = (preProps) => {
+const CodeBlock = preProps => {
   const props = preToCodeBlock(preProps)
 
   if (props) {

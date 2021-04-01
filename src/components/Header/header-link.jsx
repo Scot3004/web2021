@@ -1,17 +1,18 @@
 /** @jsx jsx */
-import { Link } from 'gatsby'
-import { jsx } from 'theme-ui'
-import Header from './header'
+import { Link } from "gatsby"
+import { jsx } from "theme-ui"
+import Header from "./header"
 
-export default ({children, ...props}) => (
+export default ({ children, ...props }) => (
   <Header>
-    <Link {...props}
+    <Link
+      {...props}
       sx={{
-        color: 'primary',
+        color: "primary",
         textDecoration: "none",
         ":hover": {
-          color: "hover"
-        }
+          color: "hover",
+        },
       }}
     >
       {children}

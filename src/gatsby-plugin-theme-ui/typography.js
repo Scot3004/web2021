@@ -1,5 +1,5 @@
-import { toTheme } from '@theme-ui/typography'
-import deYoung from 'typography-theme-de-young'
+import { toTheme } from "@theme-ui/typography"
+import deYoung from "typography-theme-de-young"
 
 const typography = toTheme(deYoung)
 

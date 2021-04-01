@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
 // from https://octicons.github.com/icon/link/
-const LinkIcon = (props) => (
+const LinkIcon = props => (
   <svg
     {...props}
     viewBox="0 0 16 16"
@@ -18,14 +18,14 @@ const LinkIcon = (props) => (
   </svg>
 )
 
-const heading = (Tag) => (props) => (
+const heading = Tag => props => (
   <Tag
     {...props}
     sx={{
       a: {
         visibility: `hidden`,
       },
-      ':hover a': {
+      ":hover a": {
         visibility: `visible`,
       },
       pointerEvents: `painted`,

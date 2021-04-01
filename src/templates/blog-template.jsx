@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from '../containers/layout'
-import SEO from '../containers/seo'
-import BlogPost from '../components/Blog/blog-post'
-import HeaderLink from '../components/Header/header-link'
+import Layout from "../containers/layout"
+import SEO from "../containers/seo"
+import BlogPost from "../components/Blog/blog-post"
+import HeaderLink from "../components/Header/header-link"
 
-const BlogLink = <HeaderLink to="/blog" >Blog</HeaderLink>
+const BlogLink = <HeaderLink to="/blog">Blog</HeaderLink>
 
 const BlogTemplate = ({ data: { mdx }, location }) => {
   return (
@@ -32,7 +32,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         image {
-          childImageSharp{
+          childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
         }

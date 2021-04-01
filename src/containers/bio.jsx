@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
-import { Themed, css, Flex } from 'theme-ui'
-import BioContent from '../components/Bio/bio-content'
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
+import { Themed, css, Flex } from "theme-ui"
+import BioContent from "../components/Bio/bio-content"
 
 const Bio = () => {
   const data = useStaticQuery(bioQuery)

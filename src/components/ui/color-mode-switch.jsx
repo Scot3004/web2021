@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
-import { useColorMode } from 'theme-ui'
-import Switch from './switch'
-import sun from '../../assets/sun.png'
-import moon from '../../assets/moon.png'
+import { useColorMode } from "theme-ui"
+import Switch from "./switch"
+import sun from "../../assets/sun.png"
+import moon from "../../assets/moon.png"
 
-const iconCss = { pointerEvents: `none`, margin: '4px' }
+const iconCss = { pointerEvents: `none`, margin: "4px" }
 
 const checkedIcon = (
   <img
@@ -30,10 +30,10 @@ const uncheckedIcon = (
   />
 )
 
-const ColorModeSwitch = ({afterToggle, ...props}) => {
+const ColorModeSwitch = ({ afterToggle, ...props }) => {
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
-  const toggleColorMode = (e) => {
+  const toggleColorMode = e => {
     setColorMode(isDark ? `light` : `dark`)
     setTimeout(function () {
       afterToggle()

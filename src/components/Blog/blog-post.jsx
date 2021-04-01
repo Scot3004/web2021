@@ -1,8 +1,8 @@
-import React from 'react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import PostHero from '../Post/post-hero'
-import PostTitle from '../Post/post-title'
-import PostDate from '../Post/post-date'
+import React from "react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import PostHero from "../Post/post-hero"
+import PostTitle from "../Post/post-title"
+import PostDate from "../Post/post-date"
 
 export default ({ title, date, body, image }) => (
   <main>

@@ -1,38 +1,38 @@
 const prismConfig = {
-  '.attr-name': {
+  ".attr-name": {
     fontStyle: `italic`,
   },
-  '.comment': {
+  ".comment": {
     color: `prism.comment`,
   },
-  '.attr-name, .string, .url': {
+  ".attr-name, .string, .url": {
     color: `prism.string`,
   },
-  '.variable': {
+  ".variable": {
     color: `prism.var`,
   },
-  '.number': {
+  ".number": {
     color: `prism.number`,
   },
-  '.builtin, .char, .constant, .function': {
+  ".builtin, .char, .constant, .function": {
     color: `prism.constant`,
   },
-  '.punctuation, .selector, .doctype': {
+  ".punctuation, .selector, .doctype": {
     color: `prism.punctuation`,
   },
-  '.class-name': {
+  ".class-name": {
     color: `prism.className`,
   },
-  '.tag, .operator, .keyword': {
+  ".tag, .operator, .keyword": {
     color: `prism.tag`,
   },
-  '.boolean': {
+  ".boolean": {
     color: `prism.boolean`,
   },
-  '.property': {
+  ".property": {
     color: `prism.property`,
   },
-  '.namespace': {
+  ".namespace": {
     color: `prism.namespace`,
   },
 }

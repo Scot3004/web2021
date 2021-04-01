@@ -1,18 +1,18 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
-import HomePageLink from './homepage-link'
+import HomePageLink from "./homepage-link"
 
-export default ({title}) => (
+export default ({ title }) => (
   <div
     sx={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
       padding: 0,
     }}
   >
     <HomePageLink />
-    <span sx={{ ml: 2, fontSize: [42], color: 'primary' }}>{title}</span>
+    <span sx={{ ml: 2, fontSize: [42], color: "primary" }}>{title}</span>
   </div>
 )

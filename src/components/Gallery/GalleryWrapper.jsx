@@ -1,5 +1,5 @@
-import React from 'react'
-import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
+import React from "react"
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 
 const options = {
   settings: {
@@ -7,14 +7,12 @@ const options = {
     transitionSpeed: 900,
   },
   thumbnail: {
-    thumbnailsGap: '20px',
+    thumbnailsGap: "20px",
   },
 }
 
 const GalleryWrapper = ({ children }) => (
-  <SRLWrapper options={options}>
-    {children}
-  </SRLWrapper>
+  <SRLWrapper options={options}>{children}</SRLWrapper>
 )
 
 export default GalleryWrapper

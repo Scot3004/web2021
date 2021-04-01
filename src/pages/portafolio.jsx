@@ -1,18 +1,17 @@
-import React from 'react'
+import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from '../containers/layout'
-import SEO from '../containers/seo'
-import Footer from '../components/ui/page-footer'
-import Header from '../components/Header/header'
-import PortfolioList from '../components/Portfolio/portfolio-list'
-
+import Layout from "../containers/layout"
+import SEO from "../containers/seo"
+import Footer from "../components/ui/page-footer"
+import Header from "../components/Header/header"
+import PortfolioList from "../components/Portfolio/portfolio-list"
 
 const PortfolioPosts = ({ data, location }) => (
-  <Layout location={location} header={<Header>Portafolio</Header>} >
+  <Layout location={location} header={<Header>Portafolio</Header>}>
     <SEO title="Portafolio" />
     <main>
-      <PortfolioList posts={data.allMdx.edges } />
+      <PortfolioList posts={data.allMdx.edges} />
     </main>
     <Footer socialLinks={data.site.siteMetadata.social} />
   </Layout>
@@ -20,7 +19,10 @@ const PortfolioPosts = ({ data, location }) => (
 
 export const query = graphql`
   {
-    allMdx(filter: {fields: {contentType: {eq: "portafolio"}}},sort: {order: ASC, fields: [frontmatter___title]}) {
+    allMdx(
+      filter: { fields: { contentType: { eq: "portafolio" } } }
+      sort: { order: ASC, fields: [frontmatter___title] }
+    ) {
       edges {
         node {
           slug
@@ -29,10 +31,7 @@ export const query = graphql`
             title
             image {
               childImageSharp {
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  aspectRatio: 1.7
-                )
+                gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1.7)
               }
             }
           }
@@ -51,5 +50,3 @@ export const query = graphql`
 `
 
 export default PortfolioPosts
-
-

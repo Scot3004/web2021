@@ -1,16 +1,20 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import { CalendarToday } from '@emotion-icons/material-twotone'
+import { jsx } from "theme-ui"
+import { CalendarToday } from "@emotion-icons/material-twotone"
 
-const PostDate = ({ children, ...props}) => (
-  <div
-    {...props}
-  >
+const PostDate = ({ children, ...props }) => (
+  <div {...props}>
     <small>
-      <CalendarToday size={16} sx={{
-        position: "relative",
-        top: "-2px"
-      }}/> {new Intl.DateTimeFormat('es-CO', {dateStyle: 'full'}).format(new Date(children))}
+      <CalendarToday
+        size={16}
+        sx={{
+          position: "relative",
+          top: "-2px",
+        }}
+      />{" "}
+      {new Intl.DateTimeFormat("es-CO", { dateStyle: "full" }).format(
+        new Date(children)
+      )}
     </small>
   </div>
 )

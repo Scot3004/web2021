@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://www.secorto.com`,
     sidebar: {
       title: "Sergio Carlos Orozco Torres",
-      subtitle: "Software developer"
+      subtitle: "Software developer",
     },
     social: [
       {
@@ -20,16 +20,16 @@ module.exports = {
       {
         name: "LinkedIn",
         url: `https://linkedin.com/in/scot3004`,
-      }
+      },
     ],
     menuLinks: [
       {
-        name: 'Blog',
-        link: '/blog',
+        name: "Blog",
+        link: "/blog",
       },
       {
-        name: 'Portafolio',
-        link: '/portafolio',
+        name: "Portafolio",
+        link: "/portafolio",
       },
     ],
   },
@@ -62,15 +62,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'SeCOrTo',
-        short_name: 'SeCOrTo',
-        start_url: '/',
-        background_color: '#004f53',
-        theme_color: '#004f53',
+        name: "SeCOrTo",
+        short_name: "SeCOrTo",
+        start_url: "/",
+        background_color: "#004f53",
+        theme_color: "#004f53",
         // Enables "Add to HomeScreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: 'standalone',
-        icon: 'content/img/logo.png', // This path is relative to the root of the site.
+        display: "standalone",
+        icon: "content/img/logo.png", // This path is relative to the root of the site.
         // An optional attribute which provides support for CORS check.
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`
@@ -80,27 +80,25 @@ module.exports = {
           {
             name: "Blog",
             url: "/blog",
-            description: "Blog Posts"
+            description: "Blog Posts",
           },
           {
             name: "Portafolio",
             url: "/portafolio",
-            description: "Posts del portafolio"
-          }
-        ]
+            description: "Posts del portafolio",
+          },
+        ],
       },
     },
     {
-      resolve: 'gatsby-plugin-theme-ui'
+      resolve: "gatsby-plugin-theme-ui",
     },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          default: require.resolve(
-            './src/containers/default-page-layout.jsx'
-          ),
+          default: require.resolve("./src/containers/default-page-layout.jsx"),
         },
         gatsbyRemarkPlugins: [
           {
@@ -120,5 +118,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-
 }

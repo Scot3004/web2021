@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
+import { Fragment } from "react"
 /** @jsx jsx */
-import { Themed, jsx } from 'theme-ui'
+import { Themed, jsx } from "theme-ui"
 
 const Footer = ({ socialLinks }) => (
   <footer
@@ -9,8 +9,8 @@ const Footer = ({ socialLinks }) => (
       pt: 3,
     }}
   >
-    © {new Date().getFullYear()},
-    Sígueme en: {socialLinks
+    © {new Date().getFullYear()}, Sígueme en:{" "}
+    {socialLinks
       ? socialLinks.map((platform, i, arr) => (
           <Fragment key={platform.url}>
             <Themed.a
@@ -20,13 +20,11 @@ const Footer = ({ socialLinks }) => (
             >
               {platform.name}
             </Themed.a>
-            {arr.length - 1 !== i && (
-              <Fragment>, </Fragment>
-            )}
+            {arr.length - 1 !== i && <Fragment>, </Fragment>}
           </Fragment>
         ))
       : null}
-{` `}&bull;{` `}
+    {` `}&bull;{` `}
     Hecho usando
     {` `}
     <Themed.a href="https://www.gatsbyjs.org">Gatsby</Themed.a>

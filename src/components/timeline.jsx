@@ -1,15 +1,15 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
-import { Star } from '@emotion-icons/material-twotone'
-import TimelineElement from './timelineElement'
+} from "react-vertical-timeline-component"
+import "react-vertical-timeline-component/style.min.css"
+import { Star } from "@emotion-icons/material-twotone"
+import TimelineElement from "./timelineElement"
 
-import { useThemeUI } from 'theme-ui'
+import { useThemeUI } from "theme-ui"
 
 const Timeline = ({ data }) => {
   const { theme } = useThemeUI()
@@ -20,12 +20,12 @@ const Timeline = ({ data }) => {
     <VerticalTimeline
       animate={animationsEnabled}
       sx={{
-        '&::before': {
+        "&::before": {
           background: theme.colors.primary,
           width: 4,
         },
-        '.vertical-timeline-element-icon': {
-          boxShadow: '0 4px 40px 0 rgba(0,0,0,0.07)',
+        ".vertical-timeline-element-icon": {
+          boxShadow: "0 4px 40px 0 rgba(0,0,0,0.07)",
         },
       }}
     >
@@ -35,7 +35,7 @@ const Timeline = ({ data }) => {
       <VerticalTimelineElement
         iconStyle={{
           background: theme.colors.timeline.previousWorkBG,
-          color: theme.colors.timeline.iconColor
+          color: theme.colors.timeline.iconColor,
         }}
         icon={<Star />}
       ></VerticalTimelineElement>

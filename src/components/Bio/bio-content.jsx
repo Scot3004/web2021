@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
-import { Themed } from 'theme-ui'
+import React, { Fragment } from "react"
+import { Themed } from "theme-ui"
 
 /**
  * Change the content to add your own bio

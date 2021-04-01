@@ -1,21 +1,21 @@
 /** @jsx jsx */
-import { Themed, Card, Text, jsx } from 'theme-ui'
-import { Link } from 'gatsby'
-import PostDate from '../Post/post-date'
+import { Themed, Card, Text, jsx } from "theme-ui"
+import { Link } from "gatsby"
+import PostDate from "../Post/post-date"
 
 const PostLink = ({ title, slug, date, excerpt, image }) => (
   <Card
     as={Link}
     to={slug}
     sx={{
-      flex: ['0 1 100%', '0 1 49%'],
-      padding:"1rem"
+      flex: ["0 1 100%", "0 1 49%"],
+      padding: "1rem",
     }}
   >
     <Text
       sx={{
-        color: 'primary',
-        fontFamily: 'heading',
+        color: "primary",
+        fontFamily: "heading",
       }}
     >
       <h2
@@ -25,10 +25,10 @@ const PostLink = ({ title, slug, date, excerpt, image }) => (
       >
         {title}
       </h2>
-      <PostDate sx={{ color: 'text' }}>{date}</PostDate>
+      <PostDate sx={{ color: "text" }}>{date}</PostDate>
       <Themed.p
         sx={{
-          color: 'text',
+          color: "text",
           margin: 0,
         }}
       >

@@ -31,7 +31,7 @@ const customStyles = {
   // from typography overrideThemeStyles
   a: {
     color: `primary`,
-    ':hover': {
+    ":hover": {
       color: `hover`,
     },
   },
@@ -53,18 +53,18 @@ const customStyles = {
     color: `inherit`,
     borderLeftColor: `inherit`,
     opacity: 0.8,
-    '&.translation': {
+    "&.translation": {
       fontSize: `1em`,
     },
   },
   navLink: {
     fontSize: 24,
-    fontFamily: 'heading',
-    color: 'primary',
+    fontFamily: "heading",
+    color: "primary",
     p: [1, 2],
-    textDecoration: 'none',
-    ':hover': {
-      color: 'sidebar.hover',
+    textDecoration: "none",
+    ":hover": {
+      color: "sidebar.hover",
     },
   },
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+import { SRLWrapper } from "simple-react-lightbox"
 
 const options = {
   settings: {

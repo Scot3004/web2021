@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { jsx } from "theme-ui"
 import Header from "./header"
 
-export default ({ children, ...props }) => (
+const HeaderLink = ({ children, ...props }) => (
   <Header>
     <Link
       {...props}
@@ -19,3 +19,5 @@ export default ({ children, ...props }) => (
     </Link>
   </Header>
 )
+
+export default HeaderLink

@@ -7,7 +7,7 @@ import { PlaylistAddCheck, Person } from "@emotion-icons/material-twotone"
 import GalleryItems from "../Gallery/GalleryItems"
 import GalleryWrapper from "../Gallery/GalleryWrapper"
 
-export default ({
+const PortfolioPost = ({
   children,
   title,
   role,
@@ -44,3 +44,5 @@ export default ({
     </GalleryWrapper>
   </main>
 )
+
+export default PortfolioPost

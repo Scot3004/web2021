@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { Fragment } from "react"
+import { Fragment } from "react"
 
 const BurgerIcon = ({ open, children, ...props }) => (
   <button

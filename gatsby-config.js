@@ -43,6 +43,20 @@ module.exports = {
         path: `${__dirname}/content/img`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portafolio`,
+        path: `${__dirname}/content/portafolio`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -52,7 +66,7 @@ module.exports = {
         short_name: 'SeCOrTo',
         start_url: '/',
         background_color: '#004f53',
-        // theme_color: '#004f53',
+        theme_color: '#004f53',
         // Enables "Add to HomeScreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
@@ -78,20 +92,6 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-theme-ui'
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/content/blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `portafolio`,
-        path: `${__dirname}/content/portafolio`,
-      },
     },
     {
       resolve: `gatsby-plugin-mdx`,

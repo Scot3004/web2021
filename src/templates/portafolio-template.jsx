@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import PortfolioPost from "../components/Portfolio/portfolio-post"
 import SEO from "../containers/seo"
 import Layout from "../containers/layout"
@@ -13,12 +14,14 @@ const PortfolioTemplate = ({ data: { mdx }, location }) => {
       <SEO title={mdx.frontmatter.title} />
       <PortfolioPost
         title={mdx.frontmatter.title}
-        body={mdx.body}
         role={mdx.frontmatter.role}
         responsibilities={mdx.frontmatter.responsibilities}
         image={mdx.frontmatter.image}
         gallery={mdx.frontmatter.gallery}
-      />
+
+      >
+        <MDXRenderer>{mdx.body}</MDXRenderer>
+      </PortfolioPost>
       {/* <Footer socialLinks={ social }/> */}
     </Layout>
   )

@@ -43,7 +43,9 @@ export const pageQuery = graphql`
         }
         gallery {
           image {
-            publicURL
+            full: childImageSharp{
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
             thumbnail: childImageSharp{
               gatsbyImageData(width: 200)
             }

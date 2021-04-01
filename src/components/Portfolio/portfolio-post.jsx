@@ -2,12 +2,9 @@
 import { jsx } from 'theme-ui'
 import PostHero from '../Post/post-hero'
 import PostTitle from '../Post/post-title'
-// import Gallery from '../ui/gallery'
 
 import { PlaylistAddCheck, Person } from '@emotion-icons/material-twotone'
-
-
-
+import GalleryItems from '../Gallery/GalleryItems'
 
 export default ({ children, title, role, responsibilities, gallery, image }) => (
   <main>
@@ -25,6 +22,7 @@ export default ({ children, title, role, responsibilities, gallery, image }) => 
         top: "-2px"
       }}/>{responsibilities}</p>
     {children}
-    {/* <Gallery items={gallery} /> */}
+
+    <GalleryItems items={gallery} />
   </main>
 )

@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { SkipNavContent } from "@reach/skip-nav"
 
-const Main = ({ children, sidebarOpen, header }) => (
+const Main = ({ children, sidebarOpen, header, footer }) => (
   <div
     sx={{
       ml: [0, 0, sidebarOpen ? theme => theme.sizes.sidebar : 0],
@@ -21,6 +21,7 @@ const Main = ({ children, sidebarOpen, header }) => (
     >
       {children}
     </div>
+    {footer}
   </div>
 )
 

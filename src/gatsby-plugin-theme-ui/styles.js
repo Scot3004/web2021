@@ -1,7 +1,7 @@
 const customStyles = {
   root: {
     fontFamily: `body`,
-    transition: 'all 0.3s linear'
+    transition: "all 0.3s linear",
   },
   pre: {
     variant: `prism`,
@@ -32,7 +32,7 @@ const customStyles = {
   // from typography overrideThemeStyles
   a: {
     color: `primary`,
-    transition: 'color 0.3s linear',
+    transition: "color 0.3s linear",
     ":hover": {
       color: `hover`,
     },
@@ -68,7 +68,7 @@ const customStyles = {
     ":hover": {
       color: "sidebar.hover",
     },
-  }
+  },
 }
 
 export default customStyles

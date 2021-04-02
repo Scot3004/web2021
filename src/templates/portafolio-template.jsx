@@ -5,10 +5,11 @@ import PortfolioPost from "../components/Portfolio/portfolio-post"
 import SEO from "../containers/seo"
 import Layout from "../containers/layout"
 import HeaderLink from "../components/Header/header-link"
+import PostNavigation from "../components/Post/post-navigation"
 
 const PortfolioLink = <HeaderLink to="/portafolio">Portafolio</HeaderLink>
 
-const PortfolioTemplate = ({ data: { mdx }, location }) => {
+const PortfolioTemplate = ({ data: { mdx, previous, next }, location }) => {
   return (
     <Layout location={location} header={PortfolioLink}>
       <SEO title={mdx.frontmatter.title} />
@@ -21,13 +22,13 @@ const PortfolioTemplate = ({ data: { mdx }, location }) => {
       >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </PortfolioPost>
-      {/* <Footer socialLinks={ social }/> */}
+      <PostNavigation previous={previous} next={next} />
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query PortafolioPostQuery($id: String) {
+  query PortafolioPostQuery($id: String, $previous: String, $next: String) {
     mdx(id: { eq: $id }) {
       id
       body
@@ -51,6 +52,24 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    previous: mdx(id: { eq: $previous }) {
+      id
+      frontmatter {
+        title
+      }
+      fields {
+        slug
+      }
+    }
+    next: mdx(id: { eq: $next }) {
+      id
+      frontmatter {
+        title
+      }
+      fields {
+        slug
       }
     }
   }

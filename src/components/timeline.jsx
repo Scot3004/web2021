@@ -23,14 +23,14 @@ const Timeline = ({ data }) => {
         "&.vertical-timeline::before": {
           background: theme.colors.primary,
           width: 4,
-          transition: "all 0.3s linear"
+          transition: "all 0.3s linear",
         },
         ".vertical-timeline-element-icon": {
           boxShadow: "0 4px 40px 0 rgba(0,0,0,0.07)",
         },
         ".vertical-timeline-element-content, .vertical-timeline-element-content-arrow": {
-          transition: "all 0.3s linear"
-        }
+          transition: "all 0.3s linear",
+        },
       }}
     >
       {data.map((item, index) => (

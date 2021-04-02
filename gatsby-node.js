@@ -24,12 +24,36 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+const createPostTypePages = (result, actions, reporter, context) => {
   const { createPage } = actions
 
-  const result = await graphql(`
+  if (result.errors) {
+    reporter.panicOnBuild(`🚨  ERROR: Creating pages for '${context}'`)
+  }
+
+  const posts = result.data.allMdx.edges
+
+  posts.forEach(({ node, previous, next }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(contentTemplate[node.fields.contentType]),
+      context: {
+        slug: node.fields.slug,
+        id: node.id,
+        previous: previous ? previous.id : null,
+        next: next ? next.id : null,
+      },
+    })
+  })
+}
+
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const resultBlog = await graphql(`
     query {
-      allMdx {
+      allMdx(
+        filter: { fields: { contentType: { eq: "blog" } } }
+        sort: { fields: frontmatter___date }
+      ) {
         edges {
           node {
             id
@@ -38,24 +62,43 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               contentType
             }
           }
+          previous {
+            id
+          }
+          next {
+            id
+          }
         }
       }
     }
   `)
 
-  if (result.errors) {
-    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
-  }
+  createPostTypePages(resultBlog, actions, reporter, "Blog")
 
-  // Create blog post pages.
-  const posts = result.data.allMdx.edges
+  const resultPortafolio = await graphql(`
+    query {
+      allMdx(
+        filter: { fields: { contentType: { eq: "portafolio" } } }
+        sort: { fields: frontmatter___title }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+              contentType
+            }
+          }
+          previous {
+            id
+          }
+          next {
+            id
+          }
+        }
+      }
+    }
+  `)
 
-  // you'll call `createPage` for each result
-  posts.forEach(({ node }, index) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(contentTemplate[node.fields.contentType]),
-      context: { slug: node.fields.slug, id: node.id },
-    })
-  })
+  createPostTypePages(resultPortafolio, actions, reporter, "Portafolio")
 }

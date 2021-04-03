@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `SeCOrTo`,
-    author: `Sergio Orozco Torres`,
     description: `Sitio web de Sergio Orozco`,
     siteUrl: `https://www.secorto.com`,
-    sidebar: {
-      title: "Sergio Carlos Orozco Torres",
-      subtitle: "Software developer",
+    author: {
+      name: "Sergio Carlos Orozco Torres",
+      job: "Software developer",
     },
     social: [
       {

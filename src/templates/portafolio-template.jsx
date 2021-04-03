@@ -6,10 +6,11 @@ import SEO from "../containers/seo"
 import Layout from "../containers/layout"
 import HeaderLink from "../components/Header/header-link"
 import PostNavigation from "../components/Post/post-navigation"
+import Bio from "../components/Bio/bio"
 
 const PortfolioLink = <HeaderLink to="/portafolio">Portafolio</HeaderLink>
 
-const PortfolioTemplate = ({ data: { mdx, previous, next }, location }) => {
+const PortfolioTemplate = ({ data: { mdx, previous, next, avatar, site }, location }) => {
   return (
     <Layout location={location} header={PortfolioLink}>
       <SEO title={mdx.frontmatter.title} />
@@ -22,6 +23,7 @@ const PortfolioTemplate = ({ data: { mdx, previous, next }, location }) => {
       >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </PortfolioPost>
+      <Bio author={site.siteMetadata.author} avatar={avatar}/>
       <PostNavigation previous={previous} next={next} />
     </Layout>
   )
@@ -70,6 +72,19 @@ export const pageQuery = graphql`
       }
       fields {
         slug
+      }
+    }
+    site {
+      siteMetadata {
+        author {
+          name
+          job
+        }
+      }
+    }
+    avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 48, height: 48)
       }
     }
   }

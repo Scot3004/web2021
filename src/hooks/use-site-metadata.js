@@ -7,15 +7,14 @@ export const useSiteMetadata = () => {
           siteMetadata {
             title
             description
-            author
+            author {
+              name
+              job
+            }
             siteUrl
             social {
               name
               url
-            }
-            sidebar {
-              title
-              subtitle
             }
           }
         }

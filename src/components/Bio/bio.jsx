@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { css, Flex, Box, Link } from "theme-ui"
+import { Flex, Box, Link } from "theme-ui"
 
 const Bio = ({author, avatar}) => {
   return (

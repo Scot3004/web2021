@@ -1,40 +1,46 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { Themed, Flex, Link as ThemedLink } from "theme-ui"
+import { Flex, Link as ThemedLink } from "theme-ui"
+import { ArrowBack, ArrowForward } from "@emotion-icons/material-twotone"
+
+const NavigationLink = ({ node, rel, children }) => (
+  <div sx={{ p: "10px 0" }}>
+    {node && (
+      <ThemedLink
+        as={Link}
+        sx={{ textDecoration: "none" }}
+        to={node.fields.slug}
+        rel={rel}
+      >
+        {children}
+      </ThemedLink>
+    )}
+  </div>
+)
 
 const PostNavigation = ({ previous, next }) => (
-  <footer>
+  <div>
     {(previous || next) && (
       <Flex
-        as="ul"
         sx={{
           borderTop: theme => `1px solid ${theme.colors.primary}`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,
           listStyle: `none`,
-          padding: "1rem",
           transition: "all .3s linear",
-          pb: 0,
+          mb: "-36px",
         }}
       >
-        <li>
-          {previous && (
-            <ThemedLink as={Link} to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </ThemedLink>
-          )}
-        </li>
-        <li>
-          {next && (
-            <ThemedLink as={Link} to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
-            </ThemedLink>
-          )}
-        </li>
+        <NavigationLink node={previous} rel="prev">
+          <ArrowBack size={24} /> {previous?.frontmatter.title}
+        </NavigationLink>
+        <NavigationLink node={next} rel="next">
+          {next?.frontmatter.title} <ArrowForward size={24} />
+        </NavigationLink>
       </Flex>
     )}
-  </footer>
+  </div>
 )
 
 export default PostNavigation

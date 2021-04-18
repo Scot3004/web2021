@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-import Logo from "../../assets/logo.svg"
+import Logo from "../../assets/logo.inline.svg"
 import { useSiteMetadata } from "../../hooks/use-site-metadata"
 
 const Brand = ({ setOpen }) => {
@@ -22,7 +22,7 @@ const Brand = ({ setOpen }) => {
           textAlign: "center",
         }}
       >
-        <img src={Logo} alt="logo" sx={{ width: 128 }}></img>
+        <Logo sx={{ width: 128 }} />
         <p sx={{ fontSize: "2rem", mb: "0.5rem" }}>{author.name}</p>
         <p sx={{ fontSize: 16, color: "sidebar.color", margin: 0 }}>
           {author.job}

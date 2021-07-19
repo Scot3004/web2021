@@ -7,20 +7,25 @@ import BlogPost from "../components/Blog/blog-post"
 import HeaderLink from "../components/Header/header-link"
 import PostNavigation from "../components/Post/post-navigation"
 import Bio from "../components/Bio/bio"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const BlogLink = <HeaderLink to="/blog">Blog</HeaderLink>
 
-const BlogTemplate = ({ data: { mdx, previous, next, site, avatar }, location }) => {
+const BlogTemplate = ({
+  data: { mdx, previous, next, site, avatar },
+  location,
+}) => {
   return (
     <Layout location={location} header={BlogLink}>
       <SEO title={mdx.frontmatter.title} />
       <BlogPost
         title={mdx.frontmatter.title}
-        body={mdx.body}
         date={mdx.frontmatter.date}
         image={mdx.frontmatter.image}
-      />
-      <Bio author={site.siteMetadata.author} avatar={avatar}/>
+      >
+        <MDXRenderer>{mdx.body}</MDXRenderer>
+      </BlogPost>
+      <Bio author={site.siteMetadata.author} avatar={avatar} />
       <PostNavigation previous={previous} next={next} />
     </Layout>
   )

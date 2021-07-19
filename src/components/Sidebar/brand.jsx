@@ -23,7 +23,7 @@ const Brand = ({ setOpen }) => {
         }}
       >
         <Logo sx={{ width: 128 }} />
-        <p sx={{ fontSize: "2rem", mb: "0.5rem" }}>{author.name}</p>
+        <p sx={{ fontSize: "1.5rem", mb: "0.5rem" }}>{author.name}</p>
         <p sx={{ fontSize: 16, color: "sidebar.color", margin: 0 }}>
           {author.job}
         </p>

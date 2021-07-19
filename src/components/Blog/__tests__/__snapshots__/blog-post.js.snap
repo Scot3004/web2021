@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPost renders correctly 1`] = `
+.emotion-0 {
+  color: primary;
+  margin-bottom: 0;
+}
+
+.emotion-1 {
+  margin-bottom: 16px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  top: -2px;
+}
+
+<main>
+  <img
+    src="testImage"
+  />
+  <h1
+    className="emotion-0"
+  >
+    blog-post
+  </h1>
+  <div
+    className="emotion-1"
+  >
+    <small>
+      <svg
+        aria-hidden="true"
+        className="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        height={16}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 2v3H4V5h16zM4 21V10h16v11H4z"
+        />
+        <path
+          d="M4 5.01h16V8H4z"
+          opacity={0.3}
+        />
+      </svg>
+       
+      2021 M10 13, Wed
+    </small>
+  </div>
+  content
+</main>
+`;

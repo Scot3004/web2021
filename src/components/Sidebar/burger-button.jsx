@@ -12,8 +12,8 @@ const BurgerIcon = ({ open, children, ...props }) => (
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-around",
-      width: "2rem",
-      height: "2rem",
+      width: "1.5rem",
+      height: "1.5rem",
       background: "transparent",
       border: "none",
       cursor: "pointer",
@@ -25,7 +25,7 @@ const BurgerIcon = ({ open, children, ...props }) => (
       },
 
       div: {
-        width: "2rem",
+        width: "1.5rem",
         height: "0.25rem",
         background: theme =>
           open ? theme.colors.sidebar.color : theme.colors.primary,

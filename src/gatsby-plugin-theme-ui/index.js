@@ -5,8 +5,10 @@ import styles from "./styles"
 import prism from "./prism"
 
 const customStyles = merge(typography, {
-  initialColorModeName: "light",
-  useColorSchemeMediaQuery: true,
+  config: {
+    initialColorModeName: "light",
+    useColorSchemeMediaQuery: true,
+  },
   colors,
   sizes: {
     container: 1280,

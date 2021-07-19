@@ -3,14 +3,16 @@ import { jsx } from "theme-ui"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Flex, Box, Link } from "theme-ui"
 
-const Bio = ({author, avatar}) => {
+const Bio = ({ author, avatar }) => {
   return (
-    <Flex sx={{
-      my: 2,
-      alignItems: `center`,
-      borderTop: theme => `1px solid ${theme.colors.muted}`,
-      pt: 2
-      }}>
+    <Flex
+      sx={{
+        my: 2,
+        alignItems: `center`,
+        borderTop: theme => `1px solid ${theme.colors.muted}`,
+        pt: 2,
+      }}
+    >
       {avatar && (
         <GatsbyImage
           image={avatar?.childImageSharp.gatsbyImageData}

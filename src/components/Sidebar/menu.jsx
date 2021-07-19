@@ -23,7 +23,7 @@ const Menu = ({ children, open }) => (
         width: theme => theme.sizes.sidebar,
       },
       a: {
-        fontSize: "1.5rem",
+        fontSize: "1.2rem",
         fontWeight: "bold",
         color: theme => theme.colors.sidebar.color,
         fontFamily: "heading",

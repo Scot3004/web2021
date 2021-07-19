@@ -10,7 +10,10 @@ import Bio from "../components/Bio/bio"
 
 const PortfolioLink = <HeaderLink to="/portafolio">Portafolio</HeaderLink>
 
-const PortfolioTemplate = ({ data: { mdx, previous, next, avatar, site }, location }) => {
+const PortfolioTemplate = ({
+  data: { mdx, previous, next, avatar, site },
+  location,
+}) => {
   return (
     <Layout location={location} header={PortfolioLink}>
       <SEO title={mdx.frontmatter.title} />
@@ -23,7 +26,7 @@ const PortfolioTemplate = ({ data: { mdx, previous, next, avatar, site }, locati
       >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </PortfolioPost>
-      <Bio author={site.siteMetadata.author} avatar={avatar}/>
+      <Bio author={site.siteMetadata.author} avatar={avatar} />
       <PostNavigation previous={previous} next={next} />
     </Layout>
   )

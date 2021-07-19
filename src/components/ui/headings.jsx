@@ -18,32 +18,33 @@ const LinkIcon = props => (
   </svg>
 )
 
-const heading = Tag => props => (
-  <Tag
-    {...props}
-    sx={{
-      a: {
-        visibility: `hidden`,
-      },
-      ":hover a": {
-        visibility: `visible`,
-      },
-      pointerEvents: `painted`,
-    }}
-  >
-    <a
-      href={`#${props.id}`}
+const heading = Tag => props =>
+  (
+    <Tag
+      {...props}
       sx={{
-        ml: `-20px`,
-        pr: `4px`,
-        color: `primary`,
+        a: {
+          visibility: `hidden`,
+        },
+        ":hover a": {
+          visibility: `visible`,
+        },
+        pointerEvents: `painted`,
       }}
     >
-      <LinkIcon />
-    </a>
-    {props.children}
-  </Tag>
-)
+      <a
+        href={`#${props.id}`}
+        sx={{
+          ml: `-20px`,
+          pr: `4px`,
+          color: `primary`,
+        }}
+      >
+        <LinkIcon />
+      </a>
+      {props.children}
+    </Tag>
+  )
 
 const headings = {
   h1: heading(`h1`),

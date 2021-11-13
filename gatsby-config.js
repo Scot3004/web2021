@@ -110,10 +110,6 @@ module.exports = {
           },
           { resolve: `gatsby-remark-copy-linked-files` },
         ],
-        rehypePlugins: [
-          // Generate heading ids for rehype-autolink-headings
-          //slug
-        ]
       },
     },
     {

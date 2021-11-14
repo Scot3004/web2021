@@ -8,8 +8,9 @@ const PostLink = ({ title, slug, date, excerpt, image }) => (
     as={Link}
     to={slug}
     sx={{
-      flex: ["0 1 100%", "0 1 49%"],
+      flex: ["0 1 100%", "0 1 45%"],
       padding: "1rem",
+      mb: "1.5rem"
     }}
   >
     <Text

@@ -7,7 +7,8 @@ const PortfolioLink = ({ slug, image, title }) => (
   <Card
     as={Link}
     sx={{
-      flex: ["0 1 100%", "0 1 49%", "0 1 32%"],
+      flex: ["0 1 100%", "0 1 48%"],
+      mb: "1.5rem"
     }}
     to={slug}
   >

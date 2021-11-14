@@ -87,7 +87,7 @@ export const pageQuery = graphql`
     }
     avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
       childImageSharp {
-        gatsbyImageData(width: 48, height: 48)
+        gatsbyImageData(width: 64, height: 64)
       }
     }
   }

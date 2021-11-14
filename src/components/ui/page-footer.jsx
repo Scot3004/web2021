@@ -5,11 +5,13 @@ import { Themed, jsx } from "theme-ui"
 const Footer = ({ socialLinks }) => (
   <footer
     sx={{
-      mt: 4,
-      pt: 3,
+      mt: "1rem",
+      position: "absolute",
+      bottom: 0,
+      height: "2rem"
     }}
   >
-    © {new Date().getFullYear()}, Sígueme en:{" "}
+    Sígueme en:{" "}
     {socialLinks
       ? socialLinks.map((platform, i, arr) => (
           <Fragment key={platform.url}>
@@ -24,10 +26,7 @@ const Footer = ({ socialLinks }) => (
           </Fragment>
         ))
       : null}
-    {` `}&bull;{` `}
-    Hecho usando
     {` `}
-    <Themed.a href="https://www.gatsbyjs.org">Gatsby</Themed.a>
   </footer>
 )
 export default Footer

@@ -23,10 +23,22 @@ const Bio = ({ author, avatar }) => {
           }}
         />
       )}
-      <Box>
-        <Link href="https://www.secorto.com/">{author.name}</Link>
-        {` `}
-        {author.job}
+      <Box
+        sx={{
+          textAlign: 'center',
+          margin: "auto"
+        }}>
+        <p sx={{
+          fontFamily: "title",
+          fontSize: "1.5rem",
+          m: 0
+        }}><Link sx={{
+          textDecoration: 'none'
+        }} href="https://www.secorto.com/">{author.name}</Link></p>
+        <p sx={{
+          m:0,
+          fontSize: "0.8rem"
+        }}>{author.job}</p>
       </Box>
     </Flex>
   )

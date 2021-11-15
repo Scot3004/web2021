@@ -5,9 +5,8 @@ import Layout from "../containers/layout"
 import SEO from "../containers/seo"
 import BlogPost from "../components/Blog/blog-post"
 import HeaderLink from "../components/Header/header-link"
-import PostNavigation from "../components/Post/post-navigation"
-import Bio from "../components/Bio/bio"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import PostFooter from "../components/Footer/post-footer"
 
 const BlogLink = <HeaderLink to="/blog">Blog</HeaderLink>
 
@@ -16,7 +15,7 @@ const BlogTemplate = ({
   location,
 }) => {
   return (
-    <Layout location={location} header={BlogLink}>
+    <Layout location={location} header={BlogLink} footer={<PostFooter author={site.siteMetadata.author} avatar={avatar} previous={previous} next={next} />}>
       <SEO title={mdx.frontmatter.title} />
       <BlogPost
         title={mdx.frontmatter.title}
@@ -25,8 +24,6 @@ const BlogTemplate = ({
       >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </BlogPost>
-      <Bio author={site.siteMetadata.author} avatar={avatar} />
-      <PostNavigation previous={previous} next={next} />
     </Layout>
   )
 }
@@ -74,7 +71,7 @@ export const pageQuery = graphql`
     }
     avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
       childImageSharp {
-        gatsbyImageData(width: 48, height: 48)
+        gatsbyImageData(width: 64, height: 64)
       }
     }
   }

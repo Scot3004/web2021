@@ -9,7 +9,8 @@ const PortfolioList = ({ posts }) => (
   <Flex
     sx={{
       flexWrap: "wrap",
-      justifyContent: "space-between",
+      justifyContent: "center",
+      gap: '3%'
     }}
   >
     {posts.map(({ node }) => (

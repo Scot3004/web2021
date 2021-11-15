@@ -3,17 +3,16 @@ import { graphql } from "gatsby"
 
 import Layout from "../containers/layout"
 import SEO from "../containers/seo"
-import Footer from "../components/ui/page-footer"
+import FooterContainer from "../containers/footer-container"
 import Header from "../components/Header/header"
 import PostList from "../components/Blog/blog-list"
 
 const BlogPosts = ({ data, location }) => (
-  <Layout location={location} header={<Header>Blog</Header>}>
+  <Layout location={location} header={<Header>Blog</Header>} footer={<FooterContainer />}>
     <SEO title="Blog" />
     <main>
       <PostList posts={data.allMdx.edges} />
     </main>
-    <Footer socialLinks={data.site.siteMetadata.social} />
   </Layout>
 )
 

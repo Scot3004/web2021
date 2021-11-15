@@ -1,12 +1,14 @@
 import React from "react"
-import BlogLayout from "./layout"
+import Layout from "./layout"
 import SEO from "./seo"
 import Header from "../components/Header/header"
-import Footer from "../components/ui/page-footer"
+import Footer from "../components/Footer/page-footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { useAvatar } from "../hooks/use-avatar"
 
 const PageLayout = ({ location, children, metadata }) => {
-  const { title, social } = useSiteMetadata()
+  const avatar = useAvatar()
+  const { title, social, author } = useSiteMetadata()
 
   const pageTitle = metadata?.title ? metadata.title : title
   const pageHeader = metadata?.header ? (
@@ -15,12 +17,13 @@ const PageLayout = ({ location, children, metadata }) => {
     <Header>{pageTitle}</Header>
   )
 
+  const footer = <Footer socialLinks={social} author={author} avatar={avatar} />
+
   return (
-    <BlogLayout location={location} header={pageHeader}>
+    <Layout location={location} header={pageHeader} footer={footer}>
       <SEO title={pageTitle} />
       {children}
-      <Footer socialLinks={social} />
-    </BlogLayout>
+    </Layout>
   )
 }
 

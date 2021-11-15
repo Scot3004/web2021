@@ -5,8 +5,7 @@ import PortfolioPost from "../components/Portfolio/portfolio-post"
 import SEO from "../containers/seo"
 import Layout from "../containers/layout"
 import HeaderLink from "../components/Header/header-link"
-import PostNavigation from "../components/Post/post-navigation"
-import Bio from "../components/Bio/bio"
+import PostFooter from "../components/Footer/post-footer"
 
 const PortfolioLink = <HeaderLink to="/portafolio">Portafolio</HeaderLink>
 
@@ -15,7 +14,7 @@ const PortfolioTemplate = ({
   location,
 }) => {
   return (
-    <Layout location={location} header={PortfolioLink}>
+    <Layout location={location} header={PortfolioLink} footer={<PostFooter author={site.siteMetadata.author} avatar={avatar} previous={previous} next={next} />}>
       <SEO title={mdx.frontmatter.title} />
       <PortfolioPost
         title={mdx.frontmatter.title}
@@ -26,8 +25,6 @@ const PortfolioTemplate = ({
       >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </PortfolioPost>
-      <Bio author={site.siteMetadata.author} avatar={avatar} />
-      <PostNavigation previous={previous} next={next} />
     </Layout>
   )
 }

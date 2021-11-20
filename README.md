@@ -1,52 +1,49 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Scot3004
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Página personal de presentación de Sergio C. Orozco Torres
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## Motivación
 
-## 🚀 Quick start
+Practicar el desarrollo front-end para fortalecer habilidades y tener una plantilla base en caso que requiera iniciar otro desarrollo similar
 
-1.  **Create a Gatsby site.**
+## Objetivos
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+### Objetivo General
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+Desarrollar un sitio web informativo que demuestre los conocimientos y habilidades en desarrollo web de Sergio Orozco Torres
 
-1.  **Start developing.**
+### Objetivos específicos
 
-    Navigate into your new site’s directory and start it up.
+- Página de presentación como desarrollador
+- Desarrollar blog de las cosas aprendidas
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+## Scripts Incluidos
 
-1.  **Open the source code and start editing!**
+### Instalación
 
-    Your site is now running at `http://localhost:8000`!
+```bash
+yarn install
+```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+### Ejecutar server para desarrollo
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```bash
+yarn develop
+```
 
-## 🧐 What's inside?
+**Abre tu editor de código y empieza a programar!**
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+El sitio web ahora está corriendo en la ruta `http://localhost:8000`!
 
-    .
-    ├── node_modules
+Nota: Puedes usar graphiql ingresando a`http://localhost:8000/___graphql`.
+Si quieres aprender a usarlo, revisa este [tutorial de gatsby](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)
+
+## 🧐 Como está organizado este proyecto?
+
+Esta es una vista rapida del primer nivel de directorio que veras en este proyecto
+    ├── content
     ├── src
+    ├── node_modules
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
@@ -58,42 +55,52 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1. **`/content`**: En este directorio están almacenados los contenidos de mi página web
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+2. **`/src`**: En este directorio está el código fuente del proyecto, entre ellas las paginas (src/pages) y todos los componentes usados de forma auxiliar
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3. **`/node_modules`**: Este directorio contiene todos los modulos de los que tu proyecto depende (paquetes npm) y son automaticamente instalados.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4. **`.gitignore`**: Este archivo especifica los archivos y directorios que no se deben cargar en git
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5. **`.prettierrc`**: Este es el archivo de configuración de prettier [Prettier](https://prettier.io/).
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+6. **`gatsby-browser.js`**: Este archivo especifica como gatsby se comportara en el navegador, puedes leer el articulo [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) para mas detalles al respecto.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7. **`gatsby-config.js`**: Este es el archivo de configuración donde se almacenan los datos sobre el sitio (meta-datos), adicionalmente la configuración de plugins, para mas información lee la [Documentación de este archivo](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8. **`gatsby-node.js`**: En este archivo se agregan las personalizaciones del proceso de construcción del sitio, puedes leer la documentación sobre [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) para mas detalles al respecto.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+9. **`gatsby-ssr.js`**: En este archivo se espera encontrar las configuraciones de [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/).
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`LICENSE`**: Aca encuentras los terminos de licencia del código que estás viendo
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+11. **`package.json`**: Es un manifiesto para los proyectos hechos con Node.js, que incluye cosas como los meta-datos (como el nombre del proyecto, autor, etc) con este archivo es que node sabe que paquetes instalar.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+12. **`yarn.lock`** Este es un archivo auto-generado por yarn que incluye las versiones exactas de los paquetes npm. **(Este archivo no deberias modificarlo manualmente).**
 
-## 🎓 Learning Gatsby
+13. **`README.md`**: Este, el archivo que estás leyendo pose información relevante sobre como se configura, como se corre y demas, todo proyecto git deberia tener uno bien documentado
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+## Enlaces útiles
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+Este blog ha sido posible gracias a una serie de herramientas y utilitarios que han facilitado la labor de su desarrollo
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+### Tecnologias
 
-## 💫 Deploy
+- [Yarn](https://yarnpkg.com/)
+- [NPM](https://www.npmjs.com/)
+- [GIT](https://git-scm.com)
+- [Gatsby](https://www.gatsbyjs.org/)
 
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
+### Servidores
 
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
+- [Github](https://github.com)
+- [Netlify](https://www.netlify.com/)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+### Linters
+
+- [ESLint](http://eslint.org/)
+
+## Copyright y licencia
+
+Copyright 2021 Scot3004. Este codigo es lanzado bajo licencia [MIT](LICENSE)

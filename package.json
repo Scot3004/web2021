@@ -46,7 +46,7 @@
     "typography-theme-de-young": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "2.4.1"
+    "prettier": "2.5.1"
   },
   "keywords": [
     "scot3004",

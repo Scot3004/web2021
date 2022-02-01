@@ -10,7 +10,7 @@
     "@emotion/jest": "^11.7.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/mdx": "^2.0.0",
     "@mdx-js/react": "^1.6.22",
     "@reach/skip-nav": "^0.16.0",
     "@reach/visually-hidden": "^0.16.0",

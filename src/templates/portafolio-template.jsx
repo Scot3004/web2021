@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import PortfolioPost from "../components/Portfolio/portfolio-post"
-import SEO from "../containers/seo"
+import Seo from "../containers/seo"
 import Layout from "../containers/layout"
 import HeaderLink from "../components/Header/header-link"
 import PostFooter from "../components/Footer/post-footer"
@@ -15,7 +15,7 @@ const PortfolioTemplate = ({
 }) => {
   return (
     <Layout location={location} header={PortfolioLink} footer={<PostFooter author={site.siteMetadata.author} avatar={avatar} previous={previous} next={next} />}>
-      <SEO title={mdx.frontmatter.title} />
+      <Seo title={mdx.frontmatter.title} />
       <PortfolioPost
         title={mdx.frontmatter.title}
         role={mdx.frontmatter.role}

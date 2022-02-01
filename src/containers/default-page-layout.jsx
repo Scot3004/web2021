@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "./layout"
-import SEO from "./seo"
+import Seo from "./seo"
 import Header from "../components/Header/header"
 import Footer from "../components/Footer/page-footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -21,7 +21,7 @@ const PageLayout = ({ location, children, metadata }) => {
 
   return (
     <Layout location={location} header={pageHeader} footer={footer}>
-      <SEO title={pageTitle} />
+      <Seo title={pageTitle} />
       {children}
     </Layout>
   )

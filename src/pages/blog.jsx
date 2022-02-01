@@ -2,14 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../containers/layout"
-import SEO from "../containers/seo"
+import Seo from "../containers/seo"
 import FooterContainer from "../containers/footer-container"
 import Header from "../components/Header/header"
 import PostList from "../components/Blog/blog-list"
 
 const BlogPosts = ({ data, location }) => (
   <Layout location={location} header={<Header>Blog</Header>} footer={<FooterContainer />}>
-    <SEO title="Blog" />
+    <Seo title="Blog" />
     <main>
       <PostList posts={data.allMdx.edges} />
     </main>

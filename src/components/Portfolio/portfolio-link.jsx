@@ -8,7 +8,8 @@ const PortfolioLink = ({ slug, image, title }) => (
     as={Link}
     sx={{
       flex: ["0 1 100%", "0 1 48%"],
-      mb: "1.5rem"
+      mb: "1.5rem",
+      backgroundColor: "background"
     }}
     to={slug}
   >

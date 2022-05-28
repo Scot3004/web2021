@@ -13,20 +13,18 @@ const BlogLink = <HeaderLink to="/blog">Blog</HeaderLink>
 const BlogTemplate = ({
   data: { mdx, previous, next, site, avatar },
   location,
-}) => {
-  return (
-    <Layout location={location} header={BlogLink} footer={<PostFooter author={site.siteMetadata.author} avatar={avatar} previous={previous} next={next} />}>
-      <Seo title={mdx.frontmatter.title} />
-      <BlogPost
-        title={mdx.frontmatter.title}
-        date={mdx.frontmatter.date}
-        image={mdx.frontmatter.image}
-      >
-        <MDXRenderer>{mdx.body}</MDXRenderer>
-      </BlogPost>
-    </Layout>
-  )
-}
+}) => (
+  <Layout location={location} header={BlogLink} footer={<PostFooter author={site.siteMetadata.author} avatar={avatar} previous={previous} next={next} />}>
+    <Seo title={mdx.frontmatter.title} />
+    <BlogPost
+      title={mdx.frontmatter.title}
+      date={mdx.frontmatter.date}
+      image={mdx.frontmatter.image}
+    >
+      <MDXRenderer>{mdx.body}</MDXRenderer>
+    </BlogPost>
+  </Layout>
+)
 
 export const pageQuery = graphql`
   query BlogPostQuery($id: String, $previous: String, $next: String) {

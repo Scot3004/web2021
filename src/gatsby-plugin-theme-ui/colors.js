@@ -22,6 +22,7 @@ const colors = {
   muted: lightGray,
   highlight: opaqueLightYellow,
   heading: grey90,
+  blogBg: "#eee",
   prism: {
     background: `#011627`,
     comment: `#809393`,
@@ -58,6 +59,7 @@ const colors = {
       muted: opaqueLightWhite,
       highlight: purple60,
       heading: white,
+      blogBg: "#333"
     },
   },
 }

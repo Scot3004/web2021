@@ -59,7 +59,7 @@ const colors = {
       muted: opaqueLightWhite,
       highlight: purple60,
       heading: white,
-      blogBg: "#333"
+      blogBg: "#2b2a32"
     },
   },
 }

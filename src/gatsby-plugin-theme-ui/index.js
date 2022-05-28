@@ -36,7 +36,7 @@ const customStyles = merge(typography, {
       transitionDelay: ".1s",
       "&:hover": {
         transform: "translate(0, -4px)",
-        boxShadow: theme => `0 0 8px  ${theme.colors.hover}`,
+        boxShadow: theme => `0 2px 14px  ${theme.colors.hover}`,
       },
     },
     compact: {

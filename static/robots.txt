@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /404
+Disallow: /404-dev
+Disallow: /offline-plugin-app-shell-fallback
+
+Sitemap: https://secorto.com/sitemap/sitemap-index.xml

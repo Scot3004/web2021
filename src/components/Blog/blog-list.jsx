@@ -10,7 +10,11 @@ const PostList = ({ posts }) => (
     sx={{
       flexWrap: "wrap",
       justifyContent: "center",
-      gap: "3%"
+      gap: "3%",
+      backgroundColor: "blogBg",
+      pt: '2rem',
+      borderRadius: "1rem",
+      transition: "background-color 0.3s linear",
     }}
   >
     {posts.map(({ node }) => (

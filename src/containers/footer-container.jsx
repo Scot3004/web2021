@@ -6,7 +6,6 @@ import Footer from "../components/Footer/page-footer"
 const FooterContainer = () => {
   const avatar = useAvatar()
   const { social, author } = useSiteMetadata()
-  console.log(author)
 
   return <Footer socialLinks={social} author={author} avatar={avatar} />
 }

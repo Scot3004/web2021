@@ -10,7 +10,8 @@ const PostLink = ({ title, slug, date, excerpt, image }) => (
     sx={{
       flex: ["0 1 100%", "0 1 45%"],
       padding: "1rem",
-      mb: "1.5rem"
+      mb: "1.5rem",
+      background: "background"
     }}
   >
     <Text
